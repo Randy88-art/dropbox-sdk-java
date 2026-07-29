@@ -7875,6 +7875,312 @@ public final class com/dropbox/core/v2/paper/UserOnPaperDocFilter : java/lang/En
 	public static fun values ()[Lcom/dropbox/core/v2/paper/UserOnPaperDocFilter;
 }
 
+public class com/dropbox/core/v2/riviera/ApiExifGpsMetadata {
+	protected final field altitude Ljava/lang/String;
+	protected final field datestamp Ljava/lang/String;
+	protected final field latitude F
+	protected final field longitude F
+	protected final field timestamp Ljava/lang/String;
+	public fun <init> ()V
+	public fun <init> (FFLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getAltitude ()Ljava/lang/String;
+	public fun getDatestamp ()Ljava/lang/String;
+	public fun getLatitude ()F
+	public fun getLongitude ()F
+	public fun getTimestamp ()Ljava/lang/String;
+	public fun hashCode ()I
+	public static fun newBuilder ()Lcom/dropbox/core/v2/riviera/ApiExifGpsMetadata$Builder;
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/riviera/ApiExifGpsMetadata$Builder {
+	protected field altitude Ljava/lang/String;
+	protected field datestamp Ljava/lang/String;
+	protected field latitude F
+	protected field longitude F
+	protected field timestamp Ljava/lang/String;
+	protected fun <init> ()V
+	public fun build ()Lcom/dropbox/core/v2/riviera/ApiExifGpsMetadata;
+	public fun withAltitude (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ApiExifGpsMetadata$Builder;
+	public fun withDatestamp (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ApiExifGpsMetadata$Builder;
+	public fun withLatitude (Ljava/lang/Float;)Lcom/dropbox/core/v2/riviera/ApiExifGpsMetadata$Builder;
+	public fun withLongitude (Ljava/lang/Float;)Lcom/dropbox/core/v2/riviera/ApiExifGpsMetadata$Builder;
+	public fun withTimestamp (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ApiExifGpsMetadata$Builder;
+}
+
+public class com/dropbox/core/v2/riviera/ApiExifMetadata {
+	protected final field apertureValue D
+	protected final field artist Ljava/lang/String;
+	protected final field cameraMake Ljava/lang/String;
+	protected final field cameraModel Ljava/lang/String;
+	protected final field copyright Ljava/lang/String;
+	protected final field dateTimeOriginal Ljava/lang/String;
+	protected final field exposureTime Ljava/lang/String;
+	protected final field focalLength Ljava/lang/String;
+	protected final field gpsMetadata Lcom/dropbox/core/v2/riviera/ApiExifGpsMetadata;
+	protected final field imageHeight J
+	protected final field imageWidth J
+	protected final field isoSpeed J
+	protected final field lensModel Ljava/lang/String;
+	protected final field megapixels D
+	protected final field offsetTimeOriginal Ljava/lang/String;
+	protected final field orientation J
+	public fun <init> ()V
+	public fun <init> (JJLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;DJLjava/lang/String;DLjava/lang/String;Ljava/lang/String;Lcom/dropbox/core/v2/riviera/ApiExifGpsMetadata;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getApertureValue ()D
+	public fun getArtist ()Ljava/lang/String;
+	public fun getCameraMake ()Ljava/lang/String;
+	public fun getCameraModel ()Ljava/lang/String;
+	public fun getCopyright ()Ljava/lang/String;
+	public fun getDateTimeOriginal ()Ljava/lang/String;
+	public fun getExposureTime ()Ljava/lang/String;
+	public fun getFocalLength ()Ljava/lang/String;
+	public fun getGpsMetadata ()Lcom/dropbox/core/v2/riviera/ApiExifGpsMetadata;
+	public fun getImageHeight ()J
+	public fun getImageWidth ()J
+	public fun getIsoSpeed ()J
+	public fun getLensModel ()Ljava/lang/String;
+	public fun getMegapixels ()D
+	public fun getOffsetTimeOriginal ()Ljava/lang/String;
+	public fun getOrientation ()J
+	public fun hashCode ()I
+	public static fun newBuilder ()Lcom/dropbox/core/v2/riviera/ApiExifMetadata$Builder;
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/riviera/ApiExifMetadata$Builder {
+	protected field apertureValue D
+	protected field artist Ljava/lang/String;
+	protected field cameraMake Ljava/lang/String;
+	protected field cameraModel Ljava/lang/String;
+	protected field copyright Ljava/lang/String;
+	protected field dateTimeOriginal Ljava/lang/String;
+	protected field exposureTime Ljava/lang/String;
+	protected field focalLength Ljava/lang/String;
+	protected field gpsMetadata Lcom/dropbox/core/v2/riviera/ApiExifGpsMetadata;
+	protected field imageHeight J
+	protected field imageWidth J
+	protected field isoSpeed J
+	protected field lensModel Ljava/lang/String;
+	protected field megapixels D
+	protected field offsetTimeOriginal Ljava/lang/String;
+	protected field orientation J
+	protected fun <init> ()V
+	public fun build ()Lcom/dropbox/core/v2/riviera/ApiExifMetadata;
+	public fun withApertureValue (Ljava/lang/Double;)Lcom/dropbox/core/v2/riviera/ApiExifMetadata$Builder;
+	public fun withArtist (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ApiExifMetadata$Builder;
+	public fun withCameraMake (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ApiExifMetadata$Builder;
+	public fun withCameraModel (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ApiExifMetadata$Builder;
+	public fun withCopyright (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ApiExifMetadata$Builder;
+	public fun withDateTimeOriginal (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ApiExifMetadata$Builder;
+	public fun withExposureTime (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ApiExifMetadata$Builder;
+	public fun withFocalLength (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ApiExifMetadata$Builder;
+	public fun withGpsMetadata (Lcom/dropbox/core/v2/riviera/ApiExifGpsMetadata;)Lcom/dropbox/core/v2/riviera/ApiExifMetadata$Builder;
+	public fun withImageHeight (Ljava/lang/Long;)Lcom/dropbox/core/v2/riviera/ApiExifMetadata$Builder;
+	public fun withImageWidth (Ljava/lang/Long;)Lcom/dropbox/core/v2/riviera/ApiExifMetadata$Builder;
+	public fun withIsoSpeed (Ljava/lang/Long;)Lcom/dropbox/core/v2/riviera/ApiExifMetadata$Builder;
+	public fun withLensModel (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ApiExifMetadata$Builder;
+	public fun withMegapixels (Ljava/lang/Double;)Lcom/dropbox/core/v2/riviera/ApiExifMetadata$Builder;
+	public fun withOffsetTimeOriginal (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ApiExifMetadata$Builder;
+	public fun withOrientation (Ljava/lang/Long;)Lcom/dropbox/core/v2/riviera/ApiExifMetadata$Builder;
+}
+
+public class com/dropbox/core/v2/riviera/ApiMediaMetadata {
+	protected final field bitrateBps J
+	protected final field creationTime Ljava/lang/String;
+	protected final field durationS D
+	protected final field streams Ljava/util/List;
+	public fun <init> ()V
+	public fun <init> (JDLjava/lang/String;Ljava/util/List;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getBitrateBps ()J
+	public fun getCreationTime ()Ljava/lang/String;
+	public fun getDurationS ()D
+	public fun getStreams ()Ljava/util/List;
+	public fun hashCode ()I
+	public static fun newBuilder ()Lcom/dropbox/core/v2/riviera/ApiMediaMetadata$Builder;
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/riviera/ApiMediaMetadata$Builder {
+	protected field bitrateBps J
+	protected field creationTime Ljava/lang/String;
+	protected field durationS D
+	protected field streams Ljava/util/List;
+	protected fun <init> ()V
+	public fun build ()Lcom/dropbox/core/v2/riviera/ApiMediaMetadata;
+	public fun withBitrateBps (Ljava/lang/Long;)Lcom/dropbox/core/v2/riviera/ApiMediaMetadata$Builder;
+	public fun withCreationTime (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ApiMediaMetadata$Builder;
+	public fun withDurationS (Ljava/lang/Double;)Lcom/dropbox/core/v2/riviera/ApiMediaMetadata$Builder;
+	public fun withStreams (Ljava/util/List;)Lcom/dropbox/core/v2/riviera/ApiMediaMetadata$Builder;
+}
+
+public class com/dropbox/core/v2/riviera/ApiMediaStream {
+	protected final field bitrateBps J
+	protected final field channelLayout Ljava/lang/String;
+	protected final field channels J
+	protected final field codecName Ljava/lang/String;
+	protected final field codecType Ljava/lang/String;
+	protected final field displayAspectRatio Ljava/lang/String;
+	protected final field durationS D
+	protected final field framesPerSecond D
+	protected final field height J
+	protected final field index J
+	protected final field languageIso639 Ljava/lang/String;
+	protected final field rotation I
+	protected final field sampleRateS J
+	protected final field width J
+	public fun <init> ()V
+	public fun <init> (JLjava/lang/String;Ljava/lang/String;JDJJDILjava/lang/String;JLjava/lang/String;JLjava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getBitrateBps ()J
+	public fun getChannelLayout ()Ljava/lang/String;
+	public fun getChannels ()J
+	public fun getCodecName ()Ljava/lang/String;
+	public fun getCodecType ()Ljava/lang/String;
+	public fun getDisplayAspectRatio ()Ljava/lang/String;
+	public fun getDurationS ()D
+	public fun getFramesPerSecond ()D
+	public fun getHeight ()J
+	public fun getIndex ()J
+	public fun getLanguageIso639 ()Ljava/lang/String;
+	public fun getRotation ()I
+	public fun getSampleRateS ()J
+	public fun getWidth ()J
+	public fun hashCode ()I
+	public static fun newBuilder ()Lcom/dropbox/core/v2/riviera/ApiMediaStream$Builder;
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/riviera/ApiMediaStream$Builder {
+	protected field bitrateBps J
+	protected field channelLayout Ljava/lang/String;
+	protected field channels J
+	protected field codecName Ljava/lang/String;
+	protected field codecType Ljava/lang/String;
+	protected field displayAspectRatio Ljava/lang/String;
+	protected field durationS D
+	protected field framesPerSecond D
+	protected field height J
+	protected field index J
+	protected field languageIso639 Ljava/lang/String;
+	protected field rotation I
+	protected field sampleRateS J
+	protected field width J
+	protected fun <init> ()V
+	public fun build ()Lcom/dropbox/core/v2/riviera/ApiMediaStream;
+	public fun withBitrateBps (Ljava/lang/Long;)Lcom/dropbox/core/v2/riviera/ApiMediaStream$Builder;
+	public fun withChannelLayout (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ApiMediaStream$Builder;
+	public fun withChannels (Ljava/lang/Long;)Lcom/dropbox/core/v2/riviera/ApiMediaStream$Builder;
+	public fun withCodecName (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ApiMediaStream$Builder;
+	public fun withCodecType (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ApiMediaStream$Builder;
+	public fun withDisplayAspectRatio (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ApiMediaStream$Builder;
+	public fun withDurationS (Ljava/lang/Double;)Lcom/dropbox/core/v2/riviera/ApiMediaStream$Builder;
+	public fun withFramesPerSecond (Ljava/lang/Double;)Lcom/dropbox/core/v2/riviera/ApiMediaStream$Builder;
+	public fun withHeight (Ljava/lang/Long;)Lcom/dropbox/core/v2/riviera/ApiMediaStream$Builder;
+	public fun withIndex (Ljava/lang/Long;)Lcom/dropbox/core/v2/riviera/ApiMediaStream$Builder;
+	public fun withLanguageIso639 (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ApiMediaStream$Builder;
+	public fun withRotation (Ljava/lang/Integer;)Lcom/dropbox/core/v2/riviera/ApiMediaStream$Builder;
+	public fun withSampleRateS (Ljava/lang/Long;)Lcom/dropbox/core/v2/riviera/ApiMediaStream$Builder;
+	public fun withWidth (Ljava/lang/Long;)Lcom/dropbox/core/v2/riviera/ApiMediaStream$Builder;
+}
+
+public class com/dropbox/core/v2/riviera/ApiOfficeMetadata {
+	protected final field company Ljava/lang/String;
+	protected final field creator Ljava/lang/String;
+	protected final field description Ljava/lang/String;
+	protected final field fileType Lcom/dropbox/core/v2/riviera/OfficeFileType;
+	protected final field keywords Ljava/lang/String;
+	protected final field pages J
+	protected final field revisionNumber Ljava/lang/String;
+	protected final field slides J
+	protected final field subject Ljava/lang/String;
+	protected final field title Ljava/lang/String;
+	protected final field totalEditTimeMinutes J
+	protected final field words J
+	public fun <init> ()V
+	public fun <init> (Lcom/dropbox/core/v2/riviera/OfficeFileType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JJJJLjava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getCompany ()Ljava/lang/String;
+	public fun getCreator ()Ljava/lang/String;
+	public fun getDescription ()Ljava/lang/String;
+	public fun getFileType ()Lcom/dropbox/core/v2/riviera/OfficeFileType;
+	public fun getKeywords ()Ljava/lang/String;
+	public fun getPages ()J
+	public fun getRevisionNumber ()Ljava/lang/String;
+	public fun getSlides ()J
+	public fun getSubject ()Ljava/lang/String;
+	public fun getTitle ()Ljava/lang/String;
+	public fun getTotalEditTimeMinutes ()J
+	public fun getWords ()J
+	public fun hashCode ()I
+	public static fun newBuilder ()Lcom/dropbox/core/v2/riviera/ApiOfficeMetadata$Builder;
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/riviera/ApiOfficeMetadata$Builder {
+	protected field company Ljava/lang/String;
+	protected field creator Ljava/lang/String;
+	protected field description Ljava/lang/String;
+	protected field fileType Lcom/dropbox/core/v2/riviera/OfficeFileType;
+	protected field keywords Ljava/lang/String;
+	protected field pages J
+	protected field revisionNumber Ljava/lang/String;
+	protected field slides J
+	protected field subject Ljava/lang/String;
+	protected field title Ljava/lang/String;
+	protected field totalEditTimeMinutes J
+	protected field words J
+	protected fun <init> ()V
+	public fun build ()Lcom/dropbox/core/v2/riviera/ApiOfficeMetadata;
+	public fun withCompany (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ApiOfficeMetadata$Builder;
+	public fun withCreator (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ApiOfficeMetadata$Builder;
+	public fun withDescription (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ApiOfficeMetadata$Builder;
+	public fun withFileType (Lcom/dropbox/core/v2/riviera/OfficeFileType;)Lcom/dropbox/core/v2/riviera/ApiOfficeMetadata$Builder;
+	public fun withKeywords (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ApiOfficeMetadata$Builder;
+	public fun withPages (Ljava/lang/Long;)Lcom/dropbox/core/v2/riviera/ApiOfficeMetadata$Builder;
+	public fun withRevisionNumber (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ApiOfficeMetadata$Builder;
+	public fun withSlides (Ljava/lang/Long;)Lcom/dropbox/core/v2/riviera/ApiOfficeMetadata$Builder;
+	public fun withSubject (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ApiOfficeMetadata$Builder;
+	public fun withTitle (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ApiOfficeMetadata$Builder;
+	public fun withTotalEditTimeMinutes (Ljava/lang/Long;)Lcom/dropbox/core/v2/riviera/ApiOfficeMetadata$Builder;
+	public fun withWords (Ljava/lang/Long;)Lcom/dropbox/core/v2/riviera/ApiOfficeMetadata$Builder;
+}
+
+public class com/dropbox/core/v2/riviera/ApiPdfMetadata {
+	protected final field height J
+	protected final field pages J
+	protected final field width J
+	public fun <init> ()V
+	public fun <init> (JJJ)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getHeight ()J
+	public fun getPages ()J
+	public fun getWidth ()J
+	public fun hashCode ()I
+	public static fun newBuilder ()Lcom/dropbox/core/v2/riviera/ApiPdfMetadata$Builder;
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/riviera/ApiPdfMetadata$Builder {
+	protected field height J
+	protected field pages J
+	protected field width J
+	protected fun <init> ()V
+	public fun build ()Lcom/dropbox/core/v2/riviera/ApiPdfMetadata;
+	public fun withHeight (Ljava/lang/Long;)Lcom/dropbox/core/v2/riviera/ApiPdfMetadata$Builder;
+	public fun withPages (Ljava/lang/Long;)Lcom/dropbox/core/v2/riviera/ApiPdfMetadata$Builder;
+	public fun withWidth (Ljava/lang/Long;)Lcom/dropbox/core/v2/riviera/ApiPdfMetadata$Builder;
+}
+
 public class com/dropbox/core/v2/riviera/ApiStructuredTranscript {
 	protected final field segments Ljava/util/List;
 	protected final field transcriptLocale Ljava/lang/String;
@@ -7926,8 +8232,10 @@ public class com/dropbox/core/v2/riviera/ApiTranscriptSegment$Builder {
 }
 
 public final class com/dropbox/core/v2/riviera/ContentApiV2Error {
+	public static final field IS_A_FOLDER_ERROR Lcom/dropbox/core/v2/riviera/ContentApiV2Error;
 	public static final field LIMIT_EXCEEDED_ERROR Lcom/dropbox/core/v2/riviera/ContentApiV2Error;
 	public static final field LINK_DOWNLOAD_DISABLED_ERROR Lcom/dropbox/core/v2/riviera/ContentApiV2Error;
+	public static final field NOT_FOUND_ERROR Lcom/dropbox/core/v2/riviera/ContentApiV2Error;
 	public static final field NO_AUDIO_ERROR Lcom/dropbox/core/v2/riviera/ContentApiV2Error;
 	public static final field OTHER Lcom/dropbox/core/v2/riviera/ContentApiV2Error;
 	public static final field SHARED_LINK_PASSWORD_PROTECTED Lcom/dropbox/core/v2/riviera/ContentApiV2Error;
@@ -7936,10 +8244,12 @@ public final class com/dropbox/core/v2/riviera/ContentApiV2Error {
 	public fun getServerErrorValue ()Ljava/lang/String;
 	public fun getUserErrorValue ()Ljava/lang/String;
 	public fun hashCode ()I
+	public fun isIsAFolderError ()Z
 	public fun isLimitExceededError ()Z
 	public fun isLinkDownloadDisabledError ()Z
 	public fun isMediaDurationError ()Z
 	public fun isNoAudioError ()Z
+	public fun isNotFoundError ()Z
 	public fun isOther ()Z
 	public fun isServerError ()Z
 	public fun isSharedLinkPasswordProtected ()Z
@@ -7953,9 +8263,11 @@ public final class com/dropbox/core/v2/riviera/ContentApiV2Error {
 }
 
 public final class com/dropbox/core/v2/riviera/ContentApiV2Error$Tag : java/lang/Enum {
+	public static final field IS_A_FOLDER_ERROR Lcom/dropbox/core/v2/riviera/ContentApiV2Error$Tag;
 	public static final field LIMIT_EXCEEDED_ERROR Lcom/dropbox/core/v2/riviera/ContentApiV2Error$Tag;
 	public static final field LINK_DOWNLOAD_DISABLED_ERROR Lcom/dropbox/core/v2/riviera/ContentApiV2Error$Tag;
 	public static final field MEDIA_DURATION_ERROR Lcom/dropbox/core/v2/riviera/ContentApiV2Error$Tag;
+	public static final field NOT_FOUND_ERROR Lcom/dropbox/core/v2/riviera/ContentApiV2Error$Tag;
 	public static final field NO_AUDIO_ERROR Lcom/dropbox/core/v2/riviera/ContentApiV2Error$Tag;
 	public static final field OTHER Lcom/dropbox/core/v2/riviera/ContentApiV2Error$Tag;
 	public static final field SERVER_ERROR Lcom/dropbox/core/v2/riviera/ContentApiV2Error$Tag;
@@ -7985,6 +8297,9 @@ public class com/dropbox/core/v2/riviera/DbxAppRivieraRequests {
 	public fun getMarkdownAsync ()Lcom/dropbox/core/v2/async/LaunchResultBase;
 	public fun getMarkdownAsyncBuilder ()Lcom/dropbox/core/v2/riviera/DbxAppGetMarkdownAsyncBuilder;
 	public fun getMarkdownAsyncCheck (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/GetMarkdownAsyncCheckResult;
+	public fun getMetadataAsync ()Lcom/dropbox/core/v2/async/LaunchResultBase;
+	public fun getMetadataAsync (Lcom/dropbox/core/v2/riviera/FileIdOrUrl;)Lcom/dropbox/core/v2/async/LaunchResultBase;
+	public fun getMetadataAsyncCheck (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/GetMetadataAsyncCheckResult;
 	public fun getTranscriptAsync ()Lcom/dropbox/core/v2/async/LaunchResultBase;
 	public fun getTranscriptAsyncBuilder ()Lcom/dropbox/core/v2/riviera/DbxAppGetTranscriptAsyncBuilder;
 	public fun getTranscriptAsyncCheck (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/GetTranscriptAsyncCheckResult;
@@ -8010,21 +8325,12 @@ public class com/dropbox/core/v2/riviera/DbxUserRivieraRequests {
 	public fun getMarkdownAsync ()Lcom/dropbox/core/v2/async/LaunchResultBase;
 	public fun getMarkdownAsyncBuilder ()Lcom/dropbox/core/v2/riviera/DbxUserGetMarkdownAsyncBuilder;
 	public fun getMarkdownAsyncCheck (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/GetMarkdownAsyncCheckResult;
+	public fun getMetadataAsync ()Lcom/dropbox/core/v2/async/LaunchResultBase;
+	public fun getMetadataAsync (Lcom/dropbox/core/v2/riviera/FileIdOrUrl;)Lcom/dropbox/core/v2/async/LaunchResultBase;
+	public fun getMetadataAsyncCheck (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/GetMetadataAsyncCheckResult;
 	public fun getTranscriptAsync ()Lcom/dropbox/core/v2/async/LaunchResultBase;
 	public fun getTranscriptAsyncBuilder ()Lcom/dropbox/core/v2/riviera/DbxUserGetTranscriptAsyncBuilder;
 	public fun getTranscriptAsyncCheck (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/GetTranscriptAsyncCheckResult;
-}
-
-public final class com/dropbox/core/v2/riviera/ErrorCode : java/lang/Enum {
-	public static final field ACCESS_ERROR Lcom/dropbox/core/v2/riviera/ErrorCode;
-	public static final field API_ERROR Lcom/dropbox/core/v2/riviera/ErrorCode;
-	public static final field BAD_REQUEST Lcom/dropbox/core/v2/riviera/ErrorCode;
-	public static final field OTHER Lcom/dropbox/core/v2/riviera/ErrorCode;
-	public static final field RATELIMIT_ERROR Lcom/dropbox/core/v2/riviera/ErrorCode;
-	public static final field UNAVAILABLE Lcom/dropbox/core/v2/riviera/ErrorCode;
-	public static final field UNKNOWN_ERROR Lcom/dropbox/core/v2/riviera/ErrorCode;
-	public static fun valueOf (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/ErrorCode;
-	public static fun values ()[Lcom/dropbox/core/v2/riviera/ErrorCode;
 }
 
 public final class com/dropbox/core/v2/riviera/FileIdOrUrl {
@@ -8060,9 +8366,9 @@ public final class com/dropbox/core/v2/riviera/GetMarkdownAsyncCheckResult {
 	public static final field OTHER Lcom/dropbox/core/v2/riviera/GetMarkdownAsyncCheckResult;
 	public static fun complete (Lcom/dropbox/core/v2/riviera/GetMarkdownResult;)Lcom/dropbox/core/v2/riviera/GetMarkdownAsyncCheckResult;
 	public fun equals (Ljava/lang/Object;)Z
-	public static fun failed (Lcom/dropbox/core/v2/riviera/GetMarkdownAsyncError;)Lcom/dropbox/core/v2/riviera/GetMarkdownAsyncCheckResult;
+	public static fun failed (Lcom/dropbox/core/v2/riviera/MarkdownConversionApiV2Error;)Lcom/dropbox/core/v2/riviera/GetMarkdownAsyncCheckResult;
 	public fun getCompleteValue ()Lcom/dropbox/core/v2/riviera/GetMarkdownResult;
-	public fun getFailedValue ()Lcom/dropbox/core/v2/riviera/GetMarkdownAsyncError;
+	public fun getFailedValue ()Lcom/dropbox/core/v2/riviera/MarkdownConversionApiV2Error;
 	public fun hashCode ()I
 	public fun isComplete ()Z
 	public fun isFailed ()Z
@@ -8082,29 +8388,6 @@ public final class com/dropbox/core/v2/riviera/GetMarkdownAsyncCheckResult$Tag :
 	public static fun values ()[Lcom/dropbox/core/v2/riviera/GetMarkdownAsyncCheckResult$Tag;
 }
 
-public class com/dropbox/core/v2/riviera/GetMarkdownAsyncError {
-	protected final field errorCode Lcom/dropbox/core/v2/riviera/ErrorCode;
-	protected final field errorDetails Lcom/dropbox/core/v2/riviera/MarkdownConversionApiV2Error;
-	public fun <init> ()V
-	public fun <init> (Lcom/dropbox/core/v2/riviera/ErrorCode;Lcom/dropbox/core/v2/riviera/MarkdownConversionApiV2Error;)V
-	public fun equals (Ljava/lang/Object;)Z
-	public fun getErrorCode ()Lcom/dropbox/core/v2/riviera/ErrorCode;
-	public fun getErrorDetails ()Lcom/dropbox/core/v2/riviera/MarkdownConversionApiV2Error;
-	public fun hashCode ()I
-	public static fun newBuilder ()Lcom/dropbox/core/v2/riviera/GetMarkdownAsyncError$Builder;
-	public fun toString ()Ljava/lang/String;
-	public fun toStringMultiline ()Ljava/lang/String;
-}
-
-public class com/dropbox/core/v2/riviera/GetMarkdownAsyncError$Builder {
-	protected field errorCode Lcom/dropbox/core/v2/riviera/ErrorCode;
-	protected field errorDetails Lcom/dropbox/core/v2/riviera/MarkdownConversionApiV2Error;
-	protected fun <init> ()V
-	public fun build ()Lcom/dropbox/core/v2/riviera/GetMarkdownAsyncError;
-	public fun withErrorCode (Lcom/dropbox/core/v2/riviera/ErrorCode;)Lcom/dropbox/core/v2/riviera/GetMarkdownAsyncError$Builder;
-	public fun withErrorDetails (Lcom/dropbox/core/v2/riviera/MarkdownConversionApiV2Error;)Lcom/dropbox/core/v2/riviera/GetMarkdownAsyncError$Builder;
-}
-
 public class com/dropbox/core/v2/riviera/GetMarkdownResult {
 	protected final field markdown Ljava/lang/String;
 	public fun <init> ()V
@@ -8116,14 +8399,64 @@ public class com/dropbox/core/v2/riviera/GetMarkdownResult {
 	public fun toStringMultiline ()Ljava/lang/String;
 }
 
+public final class com/dropbox/core/v2/riviera/GetMetadataAsyncCheckResult {
+	public static final field IN_PROGRESS Lcom/dropbox/core/v2/riviera/GetMetadataAsyncCheckResult;
+	public static final field OTHER Lcom/dropbox/core/v2/riviera/GetMetadataAsyncCheckResult;
+	public static fun complete (Lcom/dropbox/core/v2/riviera/GetMetadataResult;)Lcom/dropbox/core/v2/riviera/GetMetadataAsyncCheckResult;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun failed (Lcom/dropbox/core/v2/riviera/MetadataExtractionApiV2Error;)Lcom/dropbox/core/v2/riviera/GetMetadataAsyncCheckResult;
+	public fun getCompleteValue ()Lcom/dropbox/core/v2/riviera/GetMetadataResult;
+	public fun getFailedValue ()Lcom/dropbox/core/v2/riviera/MetadataExtractionApiV2Error;
+	public fun hashCode ()I
+	public fun isComplete ()Z
+	public fun isFailed ()Z
+	public fun isInProgress ()Z
+	public fun isOther ()Z
+	public fun tag ()Lcom/dropbox/core/v2/riviera/GetMetadataAsyncCheckResult$Tag;
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public final class com/dropbox/core/v2/riviera/GetMetadataAsyncCheckResult$Tag : java/lang/Enum {
+	public static final field COMPLETE Lcom/dropbox/core/v2/riviera/GetMetadataAsyncCheckResult$Tag;
+	public static final field FAILED Lcom/dropbox/core/v2/riviera/GetMetadataAsyncCheckResult$Tag;
+	public static final field IN_PROGRESS Lcom/dropbox/core/v2/riviera/GetMetadataAsyncCheckResult$Tag;
+	public static final field OTHER Lcom/dropbox/core/v2/riviera/GetMetadataAsyncCheckResult$Tag;
+	public static fun valueOf (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/GetMetadataAsyncCheckResult$Tag;
+	public static fun values ()[Lcom/dropbox/core/v2/riviera/GetMetadataAsyncCheckResult$Tag;
+}
+
+public class com/dropbox/core/v2/riviera/GetMetadataResult {
+	protected final field metadata Lcom/dropbox/core/v2/riviera/MetadataUnion;
+	protected final field metadataType Lcom/dropbox/core/v2/riviera/MetadataType;
+	public fun <init> ()V
+	public fun <init> (Lcom/dropbox/core/v2/riviera/MetadataType;Lcom/dropbox/core/v2/riviera/MetadataUnion;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getMetadata ()Lcom/dropbox/core/v2/riviera/MetadataUnion;
+	public fun getMetadataType ()Lcom/dropbox/core/v2/riviera/MetadataType;
+	public fun hashCode ()I
+	public static fun newBuilder ()Lcom/dropbox/core/v2/riviera/GetMetadataResult$Builder;
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/riviera/GetMetadataResult$Builder {
+	protected field metadata Lcom/dropbox/core/v2/riviera/MetadataUnion;
+	protected field metadataType Lcom/dropbox/core/v2/riviera/MetadataType;
+	protected fun <init> ()V
+	public fun build ()Lcom/dropbox/core/v2/riviera/GetMetadataResult;
+	public fun withMetadata (Lcom/dropbox/core/v2/riviera/MetadataUnion;)Lcom/dropbox/core/v2/riviera/GetMetadataResult$Builder;
+	public fun withMetadataType (Lcom/dropbox/core/v2/riviera/MetadataType;)Lcom/dropbox/core/v2/riviera/GetMetadataResult$Builder;
+}
+
 public final class com/dropbox/core/v2/riviera/GetTranscriptAsyncCheckResult {
 	public static final field IN_PROGRESS Lcom/dropbox/core/v2/riviera/GetTranscriptAsyncCheckResult;
 	public static final field OTHER Lcom/dropbox/core/v2/riviera/GetTranscriptAsyncCheckResult;
 	public static fun complete (Lcom/dropbox/core/v2/riviera/GetTranscriptResult;)Lcom/dropbox/core/v2/riviera/GetTranscriptAsyncCheckResult;
 	public fun equals (Ljava/lang/Object;)Z
-	public static fun failed (Lcom/dropbox/core/v2/riviera/GetTranscriptAsyncError;)Lcom/dropbox/core/v2/riviera/GetTranscriptAsyncCheckResult;
+	public static fun failed (Lcom/dropbox/core/v2/riviera/ContentApiV2Error;)Lcom/dropbox/core/v2/riviera/GetTranscriptAsyncCheckResult;
 	public fun getCompleteValue ()Lcom/dropbox/core/v2/riviera/GetTranscriptResult;
-	public fun getFailedValue ()Lcom/dropbox/core/v2/riviera/GetTranscriptAsyncError;
+	public fun getFailedValue ()Lcom/dropbox/core/v2/riviera/ContentApiV2Error;
 	public fun hashCode ()I
 	public fun isComplete ()Z
 	public fun isFailed ()Z
@@ -8143,29 +8476,6 @@ public final class com/dropbox/core/v2/riviera/GetTranscriptAsyncCheckResult$Tag
 	public static fun values ()[Lcom/dropbox/core/v2/riviera/GetTranscriptAsyncCheckResult$Tag;
 }
 
-public class com/dropbox/core/v2/riviera/GetTranscriptAsyncError {
-	protected final field errorCode Lcom/dropbox/core/v2/riviera/ErrorCode;
-	protected final field errorDetails Lcom/dropbox/core/v2/riviera/ContentApiV2Error;
-	public fun <init> ()V
-	public fun <init> (Lcom/dropbox/core/v2/riviera/ErrorCode;Lcom/dropbox/core/v2/riviera/ContentApiV2Error;)V
-	public fun equals (Ljava/lang/Object;)Z
-	public fun getErrorCode ()Lcom/dropbox/core/v2/riviera/ErrorCode;
-	public fun getErrorDetails ()Lcom/dropbox/core/v2/riviera/ContentApiV2Error;
-	public fun hashCode ()I
-	public static fun newBuilder ()Lcom/dropbox/core/v2/riviera/GetTranscriptAsyncError$Builder;
-	public fun toString ()Ljava/lang/String;
-	public fun toStringMultiline ()Ljava/lang/String;
-}
-
-public class com/dropbox/core/v2/riviera/GetTranscriptAsyncError$Builder {
-	protected field errorCode Lcom/dropbox/core/v2/riviera/ErrorCode;
-	protected field errorDetails Lcom/dropbox/core/v2/riviera/ContentApiV2Error;
-	protected fun <init> ()V
-	public fun build ()Lcom/dropbox/core/v2/riviera/GetTranscriptAsyncError;
-	public fun withErrorCode (Lcom/dropbox/core/v2/riviera/ErrorCode;)Lcom/dropbox/core/v2/riviera/GetTranscriptAsyncError$Builder;
-	public fun withErrorDetails (Lcom/dropbox/core/v2/riviera/ContentApiV2Error;)Lcom/dropbox/core/v2/riviera/GetTranscriptAsyncError$Builder;
-}
-
 public class com/dropbox/core/v2/riviera/GetTranscriptResult {
 	protected final field structuredTranscript Lcom/dropbox/core/v2/riviera/ApiStructuredTranscript;
 	public fun <init> ()V
@@ -8179,8 +8489,10 @@ public class com/dropbox/core/v2/riviera/GetTranscriptResult {
 
 public final class com/dropbox/core/v2/riviera/MarkdownConversionApiV2Error {
 	public static final field CONVERSION_FAILURE_ERROR Lcom/dropbox/core/v2/riviera/MarkdownConversionApiV2Error;
+	public static final field IS_A_FOLDER_ERROR Lcom/dropbox/core/v2/riviera/MarkdownConversionApiV2Error;
 	public static final field LIMIT_EXCEEDED_ERROR Lcom/dropbox/core/v2/riviera/MarkdownConversionApiV2Error;
 	public static final field LINK_DOWNLOAD_DISABLED_ERROR Lcom/dropbox/core/v2/riviera/MarkdownConversionApiV2Error;
+	public static final field NOT_FOUND_ERROR Lcom/dropbox/core/v2/riviera/MarkdownConversionApiV2Error;
 	public static final field OTHER Lcom/dropbox/core/v2/riviera/MarkdownConversionApiV2Error;
 	public static final field SHARED_LINK_PASSWORD_PROTECTED Lcom/dropbox/core/v2/riviera/MarkdownConversionApiV2Error;
 	public static final field UNSUPPORTED_FORMAT_ERROR Lcom/dropbox/core/v2/riviera/MarkdownConversionApiV2Error;
@@ -8189,8 +8501,10 @@ public final class com/dropbox/core/v2/riviera/MarkdownConversionApiV2Error {
 	public fun getUserErrorValue ()Ljava/lang/String;
 	public fun hashCode ()I
 	public fun isConversionFailureError ()Z
+	public fun isIsAFolderError ()Z
 	public fun isLimitExceededError ()Z
 	public fun isLinkDownloadDisabledError ()Z
+	public fun isNotFoundError ()Z
 	public fun isOther ()Z
 	public fun isServerError ()Z
 	public fun isSharedLinkPasswordProtected ()Z
@@ -8205,8 +8519,10 @@ public final class com/dropbox/core/v2/riviera/MarkdownConversionApiV2Error {
 
 public final class com/dropbox/core/v2/riviera/MarkdownConversionApiV2Error$Tag : java/lang/Enum {
 	public static final field CONVERSION_FAILURE_ERROR Lcom/dropbox/core/v2/riviera/MarkdownConversionApiV2Error$Tag;
+	public static final field IS_A_FOLDER_ERROR Lcom/dropbox/core/v2/riviera/MarkdownConversionApiV2Error$Tag;
 	public static final field LIMIT_EXCEEDED_ERROR Lcom/dropbox/core/v2/riviera/MarkdownConversionApiV2Error$Tag;
 	public static final field LINK_DOWNLOAD_DISABLED_ERROR Lcom/dropbox/core/v2/riviera/MarkdownConversionApiV2Error$Tag;
+	public static final field NOT_FOUND_ERROR Lcom/dropbox/core/v2/riviera/MarkdownConversionApiV2Error$Tag;
 	public static final field OTHER Lcom/dropbox/core/v2/riviera/MarkdownConversionApiV2Error$Tag;
 	public static final field SERVER_ERROR Lcom/dropbox/core/v2/riviera/MarkdownConversionApiV2Error$Tag;
 	public static final field SHARED_LINK_PASSWORD_PROTECTED Lcom/dropbox/core/v2/riviera/MarkdownConversionApiV2Error$Tag;
@@ -8227,10 +8543,107 @@ public class com/dropbox/core/v2/riviera/MediaDurationError {
 	public fun toStringMultiline ()Ljava/lang/String;
 }
 
+public final class com/dropbox/core/v2/riviera/MetadataExtractionApiV2Error {
+	public static final field CONVERSION_FAILURE_ERROR Lcom/dropbox/core/v2/riviera/MetadataExtractionApiV2Error;
+	public static final field IS_A_FOLDER_ERROR Lcom/dropbox/core/v2/riviera/MetadataExtractionApiV2Error;
+	public static final field LIMIT_EXCEEDED_ERROR Lcom/dropbox/core/v2/riviera/MetadataExtractionApiV2Error;
+	public static final field LINK_DOWNLOAD_DISABLED_ERROR Lcom/dropbox/core/v2/riviera/MetadataExtractionApiV2Error;
+	public static final field NOT_FOUND_ERROR Lcom/dropbox/core/v2/riviera/MetadataExtractionApiV2Error;
+	public static final field OTHER Lcom/dropbox/core/v2/riviera/MetadataExtractionApiV2Error;
+	public static final field SHARED_LINK_PASSWORD_PROTECTED Lcom/dropbox/core/v2/riviera/MetadataExtractionApiV2Error;
+	public static final field UNSUPPORTED_FORMAT_ERROR Lcom/dropbox/core/v2/riviera/MetadataExtractionApiV2Error;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getServerErrorValue ()Ljava/lang/String;
+	public fun getUserErrorValue ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun isConversionFailureError ()Z
+	public fun isIsAFolderError ()Z
+	public fun isLimitExceededError ()Z
+	public fun isLinkDownloadDisabledError ()Z
+	public fun isNotFoundError ()Z
+	public fun isOther ()Z
+	public fun isServerError ()Z
+	public fun isSharedLinkPasswordProtected ()Z
+	public fun isUnsupportedFormatError ()Z
+	public fun isUserError ()Z
+	public static fun serverError (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/MetadataExtractionApiV2Error;
+	public fun tag ()Lcom/dropbox/core/v2/riviera/MetadataExtractionApiV2Error$Tag;
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+	public static fun userError (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/MetadataExtractionApiV2Error;
+}
+
+public final class com/dropbox/core/v2/riviera/MetadataExtractionApiV2Error$Tag : java/lang/Enum {
+	public static final field CONVERSION_FAILURE_ERROR Lcom/dropbox/core/v2/riviera/MetadataExtractionApiV2Error$Tag;
+	public static final field IS_A_FOLDER_ERROR Lcom/dropbox/core/v2/riviera/MetadataExtractionApiV2Error$Tag;
+	public static final field LIMIT_EXCEEDED_ERROR Lcom/dropbox/core/v2/riviera/MetadataExtractionApiV2Error$Tag;
+	public static final field LINK_DOWNLOAD_DISABLED_ERROR Lcom/dropbox/core/v2/riviera/MetadataExtractionApiV2Error$Tag;
+	public static final field NOT_FOUND_ERROR Lcom/dropbox/core/v2/riviera/MetadataExtractionApiV2Error$Tag;
+	public static final field OTHER Lcom/dropbox/core/v2/riviera/MetadataExtractionApiV2Error$Tag;
+	public static final field SERVER_ERROR Lcom/dropbox/core/v2/riviera/MetadataExtractionApiV2Error$Tag;
+	public static final field SHARED_LINK_PASSWORD_PROTECTED Lcom/dropbox/core/v2/riviera/MetadataExtractionApiV2Error$Tag;
+	public static final field UNSUPPORTED_FORMAT_ERROR Lcom/dropbox/core/v2/riviera/MetadataExtractionApiV2Error$Tag;
+	public static final field USER_ERROR Lcom/dropbox/core/v2/riviera/MetadataExtractionApiV2Error$Tag;
+	public static fun valueOf (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/MetadataExtractionApiV2Error$Tag;
+	public static fun values ()[Lcom/dropbox/core/v2/riviera/MetadataExtractionApiV2Error$Tag;
+}
+
+public final class com/dropbox/core/v2/riviera/MetadataType : java/lang/Enum {
+	public static final field METADATA_TYPE_EXIF Lcom/dropbox/core/v2/riviera/MetadataType;
+	public static final field METADATA_TYPE_MEDIA Lcom/dropbox/core/v2/riviera/MetadataType;
+	public static final field METADATA_TYPE_OFFICE Lcom/dropbox/core/v2/riviera/MetadataType;
+	public static final field METADATA_TYPE_PDF Lcom/dropbox/core/v2/riviera/MetadataType;
+	public static final field METADATA_TYPE_UNKNOWN Lcom/dropbox/core/v2/riviera/MetadataType;
+	public static final field OTHER Lcom/dropbox/core/v2/riviera/MetadataType;
+	public static fun valueOf (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/MetadataType;
+	public static fun values ()[Lcom/dropbox/core/v2/riviera/MetadataType;
+}
+
+public final class com/dropbox/core/v2/riviera/MetadataUnion {
+	public static final field OTHER Lcom/dropbox/core/v2/riviera/MetadataUnion;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun exif (Lcom/dropbox/core/v2/riviera/ApiExifMetadata;)Lcom/dropbox/core/v2/riviera/MetadataUnion;
+	public fun getExifValue ()Lcom/dropbox/core/v2/riviera/ApiExifMetadata;
+	public fun getMediaValue ()Lcom/dropbox/core/v2/riviera/ApiMediaMetadata;
+	public fun getOfficeValue ()Lcom/dropbox/core/v2/riviera/ApiOfficeMetadata;
+	public fun getPdfValue ()Lcom/dropbox/core/v2/riviera/ApiPdfMetadata;
+	public fun hashCode ()I
+	public fun isExif ()Z
+	public fun isMedia ()Z
+	public fun isOffice ()Z
+	public fun isOther ()Z
+	public fun isPdf ()Z
+	public static fun media (Lcom/dropbox/core/v2/riviera/ApiMediaMetadata;)Lcom/dropbox/core/v2/riviera/MetadataUnion;
+	public static fun office (Lcom/dropbox/core/v2/riviera/ApiOfficeMetadata;)Lcom/dropbox/core/v2/riviera/MetadataUnion;
+	public static fun pdf (Lcom/dropbox/core/v2/riviera/ApiPdfMetadata;)Lcom/dropbox/core/v2/riviera/MetadataUnion;
+	public fun tag ()Lcom/dropbox/core/v2/riviera/MetadataUnion$Tag;
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public final class com/dropbox/core/v2/riviera/MetadataUnion$Tag : java/lang/Enum {
+	public static final field EXIF Lcom/dropbox/core/v2/riviera/MetadataUnion$Tag;
+	public static final field MEDIA Lcom/dropbox/core/v2/riviera/MetadataUnion$Tag;
+	public static final field OFFICE Lcom/dropbox/core/v2/riviera/MetadataUnion$Tag;
+	public static final field OTHER Lcom/dropbox/core/v2/riviera/MetadataUnion$Tag;
+	public static final field PDF Lcom/dropbox/core/v2/riviera/MetadataUnion$Tag;
+	public static fun valueOf (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/MetadataUnion$Tag;
+	public static fun values ()[Lcom/dropbox/core/v2/riviera/MetadataUnion$Tag;
+}
+
+public final class com/dropbox/core/v2/riviera/OfficeFileType : java/lang/Enum {
+	public static final field OFFICE_FILETYPE_EXCEL Lcom/dropbox/core/v2/riviera/OfficeFileType;
+	public static final field OFFICE_FILETYPE_POWERPOINT Lcom/dropbox/core/v2/riviera/OfficeFileType;
+	public static final field OFFICE_FILETYPE_UNKNOWN Lcom/dropbox/core/v2/riviera/OfficeFileType;
+	public static final field OFFICE_FILETYPE_WORD Lcom/dropbox/core/v2/riviera/OfficeFileType;
+	public static final field OTHER Lcom/dropbox/core/v2/riviera/OfficeFileType;
+	public static fun valueOf (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/OfficeFileType;
+	public static fun values ()[Lcom/dropbox/core/v2/riviera/OfficeFileType;
+}
+
 public final class com/dropbox/core/v2/riviera/TimestampLevel : java/lang/Enum {
 	public static final field OTHER Lcom/dropbox/core/v2/riviera/TimestampLevel;
 	public static final field SENTENCE Lcom/dropbox/core/v2/riviera/TimestampLevel;
-	public static final field UNKNOWN Lcom/dropbox/core/v2/riviera/TimestampLevel;
 	public static final field WORD Lcom/dropbox/core/v2/riviera/TimestampLevel;
 	public static fun valueOf (Ljava/lang/String;)Lcom/dropbox/core/v2/riviera/TimestampLevel;
 	public static fun values ()[Lcom/dropbox/core/v2/riviera/TimestampLevel;
@@ -11820,6 +12233,97 @@ public class com/dropbox/core/v2/team/BaseDfbReport {
 	public fun toStringMultiline ()Ljava/lang/String;
 }
 
+public class com/dropbox/core/v2/team/BulkSuspendComplete {
+	protected final field failed J
+	protected final field reportDelivery Lcom/dropbox/core/v2/team/BulkSuspendReportDeliveryStatus;
+	protected final field requested J
+	protected final field suspended J
+	protected final field unknown J
+	public fun <init> (JJJJLcom/dropbox/core/v2/team/BulkSuspendReportDeliveryStatus;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getFailed ()J
+	public fun getReportDelivery ()Lcom/dropbox/core/v2/team/BulkSuspendReportDeliveryStatus;
+	public fun getRequested ()J
+	public fun getSuspended ()J
+	public fun getUnknown ()J
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public final class com/dropbox/core/v2/team/BulkSuspendError : java/lang/Enum {
+	public static final field ACTING_ADMIN Lcom/dropbox/core/v2/team/BulkSuspendError;
+	public static final field DUPLICATE_CLIENT_ITEM_ID Lcom/dropbox/core/v2/team/BulkSuspendError;
+	public static final field DUPLICATE_TEAM_MEMBER_ID Lcom/dropbox/core/v2/team/BulkSuspendError;
+	public static final field INVALID_REQUEST Lcom/dropbox/core/v2/team/BulkSuspendError;
+	public static final field LAST_ADMIN Lcom/dropbox/core/v2/team/BulkSuspendError;
+	public static final field OTHER Lcom/dropbox/core/v2/team/BulkSuspendError;
+	public static final field TOO_MANY_MEMBERS Lcom/dropbox/core/v2/team/BulkSuspendError;
+	public static fun valueOf (Ljava/lang/String;)Lcom/dropbox/core/v2/team/BulkSuspendError;
+	public static fun values ()[Lcom/dropbox/core/v2/team/BulkSuspendError;
+}
+
+public class com/dropbox/core/v2/team/BulkSuspendErrorException : com/dropbox/core/DbxApiException {
+	public final field errorValue Lcom/dropbox/core/v2/team/BulkSuspendError;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Lcom/dropbox/core/LocalizedText;Lcom/dropbox/core/v2/team/BulkSuspendError;)V
+}
+
+public final class com/dropbox/core/v2/team/BulkSuspendJobStatus {
+	public static final field IN_PROGRESS Lcom/dropbox/core/v2/team/BulkSuspendJobStatus;
+	public static final field OTHER Lcom/dropbox/core/v2/team/BulkSuspendJobStatus;
+	public static fun complete (Lcom/dropbox/core/v2/team/BulkSuspendComplete;)Lcom/dropbox/core/v2/team/BulkSuspendJobStatus;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun failed (Lcom/dropbox/core/v2/team/BulkSuspendTaskFailure;)Lcom/dropbox/core/v2/team/BulkSuspendJobStatus;
+	public fun getCompleteValue ()Lcom/dropbox/core/v2/team/BulkSuspendComplete;
+	public fun getFailedValue ()Lcom/dropbox/core/v2/team/BulkSuspendTaskFailure;
+	public fun hashCode ()I
+	public fun isComplete ()Z
+	public fun isFailed ()Z
+	public fun isInProgress ()Z
+	public fun isOther ()Z
+	public fun tag ()Lcom/dropbox/core/v2/team/BulkSuspendJobStatus$Tag;
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public final class com/dropbox/core/v2/team/BulkSuspendJobStatus$Tag : java/lang/Enum {
+	public static final field COMPLETE Lcom/dropbox/core/v2/team/BulkSuspendJobStatus$Tag;
+	public static final field FAILED Lcom/dropbox/core/v2/team/BulkSuspendJobStatus$Tag;
+	public static final field IN_PROGRESS Lcom/dropbox/core/v2/team/BulkSuspendJobStatus$Tag;
+	public static final field OTHER Lcom/dropbox/core/v2/team/BulkSuspendJobStatus$Tag;
+	public static fun valueOf (Ljava/lang/String;)Lcom/dropbox/core/v2/team/BulkSuspendJobStatus$Tag;
+	public static fun values ()[Lcom/dropbox/core/v2/team/BulkSuspendJobStatus$Tag;
+}
+
+public class com/dropbox/core/v2/team/BulkSuspendMemberTarget {
+	protected final field clientItemId Ljava/lang/String;
+	protected final field suspendArg Lcom/dropbox/core/v2/team/MembersDeactivateArg;
+	public fun <init> (Ljava/lang/String;Lcom/dropbox/core/v2/team/MembersDeactivateArg;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getClientItemId ()Ljava/lang/String;
+	public fun getSuspendArg ()Lcom/dropbox/core/v2/team/MembersDeactivateArg;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public final class com/dropbox/core/v2/team/BulkSuspendReportDeliveryStatus : java/lang/Enum {
+	public static final field BULK_SUSPEND_REPORT_DELIVERY_STATUS_DELIVERED Lcom/dropbox/core/v2/team/BulkSuspendReportDeliveryStatus;
+	public static final field BULK_SUSPEND_REPORT_DELIVERY_STATUS_FAILED Lcom/dropbox/core/v2/team/BulkSuspendReportDeliveryStatus;
+	public static final field BULK_SUSPEND_REPORT_DELIVERY_STATUS_PENDING Lcom/dropbox/core/v2/team/BulkSuspendReportDeliveryStatus;
+	public static final field BULK_SUSPEND_REPORT_DELIVERY_STATUS_UNSPECIFIED Lcom/dropbox/core/v2/team/BulkSuspendReportDeliveryStatus;
+	public static final field OTHER Lcom/dropbox/core/v2/team/BulkSuspendReportDeliveryStatus;
+	public static fun valueOf (Ljava/lang/String;)Lcom/dropbox/core/v2/team/BulkSuspendReportDeliveryStatus;
+	public static fun values ()[Lcom/dropbox/core/v2/team/BulkSuspendReportDeliveryStatus;
+}
+
+public final class com/dropbox/core/v2/team/BulkSuspendTaskFailure : java/lang/Enum {
+	public static final field OTHER Lcom/dropbox/core/v2/team/BulkSuspendTaskFailure;
+	public static final field UNUSABLE_RESULT Lcom/dropbox/core/v2/team/BulkSuspendTaskFailure;
+	public static fun valueOf (Ljava/lang/String;)Lcom/dropbox/core/v2/team/BulkSuspendTaskFailure;
+	public static fun values ()[Lcom/dropbox/core/v2/team/BulkSuspendTaskFailure;
+}
+
 public final class com/dropbox/core/v2/team/CustomQuotaError : java/lang/Enum {
 	public static final field OTHER Lcom/dropbox/core/v2/team/CustomQuotaError;
 	public static final field TOO_MANY_USERS Lcom/dropbox/core/v2/team/CustomQuotaError;
@@ -11933,6 +12437,8 @@ public class com/dropbox/core/v2/team/DbxTeamTeamRequests {
 	public fun membersAddJobStatusGetV2 (Ljava/lang/String;)Lcom/dropbox/core/v2/team/MembersAddJobStatusV2Result;
 	public fun membersAddV2 (Ljava/util/List;)Lcom/dropbox/core/v2/team/MembersAddLaunchV2Result;
 	public fun membersAddV2 (Ljava/util/List;Z)Lcom/dropbox/core/v2/team/MembersAddLaunchV2Result;
+	public fun membersBulkSuspend (Ljava/util/List;)Lcom/dropbox/core/v2/async/LaunchResultBase;
+	public fun membersBulkSuspendJobStatusCheck (Ljava/lang/String;)Lcom/dropbox/core/v2/team/BulkSuspendJobStatus;
 	public fun membersDeleteFormerMemberFiles (Lcom/dropbox/core/v2/team/UserSelectorArg;)V
 	public fun membersDeleteProfilePhoto (Lcom/dropbox/core/v2/team/UserSelectorArg;)Lcom/dropbox/core/v2/team/TeamMemberInfo;
 	public fun membersDeleteProfilePhotoV2 (Lcom/dropbox/core/v2/team/UserSelectorArg;)Lcom/dropbox/core/v2/team/TeamMemberInfoV2Result;
@@ -13732,6 +14238,28 @@ public final class com/dropbox/core/v2/team/MembersAddLaunchV2Result$Tag : java/
 	public static fun values ()[Lcom/dropbox/core/v2/team/MembersAddLaunchV2Result$Tag;
 }
 
+public class com/dropbox/core/v2/team/MembersDeactivateArg : com/dropbox/core/v2/team/MembersDeactivateBaseArg {
+	protected final field wipeData Z
+	public fun <init> (Lcom/dropbox/core/v2/team/UserSelectorArg;)V
+	public fun <init> (Lcom/dropbox/core/v2/team/UserSelectorArg;Z)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getUser ()Lcom/dropbox/core/v2/team/UserSelectorArg;
+	public fun getWipeData ()Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/team/MembersDeactivateBaseArg {
+	protected final field user Lcom/dropbox/core/v2/team/UserSelectorArg;
+	public fun <init> (Lcom/dropbox/core/v2/team/UserSelectorArg;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getUser ()Lcom/dropbox/core/v2/team/UserSelectorArg;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
 public final class com/dropbox/core/v2/team/MembersDeleteFormerMemberFilesError : java/lang/Enum {
 	public static final field ALREADY_TRANSFERRED Lcom/dropbox/core/v2/team/MembersDeleteFormerMemberFilesError;
 	public static final field ALREADY_TRANSFERRED_OR_DELETED Lcom/dropbox/core/v2/team/MembersDeleteFormerMemberFilesError;
@@ -14735,6 +15263,7 @@ public final class com/dropbox/core/v2/team/TeamFolderAccessError : java/lang/En
 }
 
 public final class com/dropbox/core/v2/team/TeamFolderActivateError {
+	public static final field FOLDER_COUNT_LIMIT_EXCEEDED Lcom/dropbox/core/v2/team/TeamFolderActivateError;
 	public static final field OTHER Lcom/dropbox/core/v2/team/TeamFolderActivateError;
 	public static fun accessError (Lcom/dropbox/core/v2/team/TeamFolderAccessError;)Lcom/dropbox/core/v2/team/TeamFolderActivateError;
 	public fun equals (Ljava/lang/Object;)Z
@@ -14743,6 +15272,7 @@ public final class com/dropbox/core/v2/team/TeamFolderActivateError {
 	public fun getTeamSharedDropboxErrorValue ()Lcom/dropbox/core/v2/team/TeamFolderTeamSharedDropboxError;
 	public fun hashCode ()I
 	public fun isAccessError ()Z
+	public fun isFolderCountLimitExceeded ()Z
 	public fun isOther ()Z
 	public fun isStatusError ()Z
 	public fun isTeamSharedDropboxError ()Z
@@ -14755,6 +15285,7 @@ public final class com/dropbox/core/v2/team/TeamFolderActivateError {
 
 public final class com/dropbox/core/v2/team/TeamFolderActivateError$Tag : java/lang/Enum {
 	public static final field ACCESS_ERROR Lcom/dropbox/core/v2/team/TeamFolderActivateError$Tag;
+	public static final field FOLDER_COUNT_LIMIT_EXCEEDED Lcom/dropbox/core/v2/team/TeamFolderActivateError$Tag;
 	public static final field OTHER Lcom/dropbox/core/v2/team/TeamFolderActivateError$Tag;
 	public static final field STATUS_ERROR Lcom/dropbox/core/v2/team/TeamFolderActivateError$Tag;
 	public static final field TEAM_SHARED_DROPBOX_ERROR Lcom/dropbox/core/v2/team/TeamFolderActivateError$Tag;
@@ -14846,6 +15377,7 @@ public final class com/dropbox/core/v2/team/TeamFolderArchiveLaunch$Tag : java/l
 }
 
 public final class com/dropbox/core/v2/team/TeamFolderCreateError {
+	public static final field FOLDER_COUNT_LIMIT_EXCEEDED Lcom/dropbox/core/v2/team/TeamFolderCreateError;
 	public static final field FOLDER_NAME_ALREADY_USED Lcom/dropbox/core/v2/team/TeamFolderCreateError;
 	public static final field FOLDER_NAME_RESERVED Lcom/dropbox/core/v2/team/TeamFolderCreateError;
 	public static final field INVALID_FOLDER_NAME Lcom/dropbox/core/v2/team/TeamFolderCreateError;
@@ -14853,6 +15385,7 @@ public final class com/dropbox/core/v2/team/TeamFolderCreateError {
 	public fun equals (Ljava/lang/Object;)Z
 	public fun getSyncSettingsErrorValue ()Lcom/dropbox/core/v2/files/SyncSettingsError;
 	public fun hashCode ()I
+	public fun isFolderCountLimitExceeded ()Z
 	public fun isFolderNameAlreadyUsed ()Z
 	public fun isFolderNameReserved ()Z
 	public fun isInvalidFolderName ()Z
@@ -14865,6 +15398,7 @@ public final class com/dropbox/core/v2/team/TeamFolderCreateError {
 }
 
 public final class com/dropbox/core/v2/team/TeamFolderCreateError$Tag : java/lang/Enum {
+	public static final field FOLDER_COUNT_LIMIT_EXCEEDED Lcom/dropbox/core/v2/team/TeamFolderCreateError$Tag;
 	public static final field FOLDER_NAME_ALREADY_USED Lcom/dropbox/core/v2/team/TeamFolderCreateError$Tag;
 	public static final field FOLDER_NAME_RESERVED Lcom/dropbox/core/v2/team/TeamFolderCreateError$Tag;
 	public static final field INVALID_FOLDER_NAME Lcom/dropbox/core/v2/team/TeamFolderCreateError$Tag;
@@ -15049,6 +15583,7 @@ public class com/dropbox/core/v2/team/TeamFolderRenameErrorException : com/dropb
 }
 
 public final class com/dropbox/core/v2/team/TeamFolderRestoreError {
+	public static final field FOLDER_COUNT_LIMIT_EXCEEDED Lcom/dropbox/core/v2/team/TeamFolderRestoreError;
 	public static final field OTHER Lcom/dropbox/core/v2/team/TeamFolderRestoreError;
 	public static fun accessError (Lcom/dropbox/core/v2/team/TeamFolderAccessError;)Lcom/dropbox/core/v2/team/TeamFolderRestoreError;
 	public fun equals (Ljava/lang/Object;)Z
@@ -15057,6 +15592,7 @@ public final class com/dropbox/core/v2/team/TeamFolderRestoreError {
 	public fun getTeamSharedDropboxErrorValue ()Lcom/dropbox/core/v2/team/TeamFolderTeamSharedDropboxError;
 	public fun hashCode ()I
 	public fun isAccessError ()Z
+	public fun isFolderCountLimitExceeded ()Z
 	public fun isOther ()Z
 	public fun isStatusError ()Z
 	public fun isTeamSharedDropboxError ()Z
@@ -15069,6 +15605,7 @@ public final class com/dropbox/core/v2/team/TeamFolderRestoreError {
 
 public final class com/dropbox/core/v2/team/TeamFolderRestoreError$Tag : java/lang/Enum {
 	public static final field ACCESS_ERROR Lcom/dropbox/core/v2/team/TeamFolderRestoreError$Tag;
+	public static final field FOLDER_COUNT_LIMIT_EXCEEDED Lcom/dropbox/core/v2/team/TeamFolderRestoreError$Tag;
 	public static final field OTHER Lcom/dropbox/core/v2/team/TeamFolderRestoreError$Tag;
 	public static final field STATUS_ERROR Lcom/dropbox/core/v2/team/TeamFolderRestoreError$Tag;
 	public static final field TEAM_SHARED_DROPBOX_ERROR Lcom/dropbox/core/v2/team/TeamFolderRestoreError$Tag;
@@ -20109,6 +20646,17 @@ public final class com/dropbox/core/v2/teamlog/EventDetails {
 	public fun getLoginFailDetailsValue ()Lcom/dropbox/core/v2/teamlog/LoginFailDetails;
 	public fun getLoginSuccessDetailsValue ()Lcom/dropbox/core/v2/teamlog/LoginSuccessDetails;
 	public fun getLogoutDetailsValue ()Lcom/dropbox/core/v2/teamlog/LogoutDetails;
+	public fun getMediaHubAddingPeoplePolicyChangedDetailsValue ()Lcom/dropbox/core/v2/teamlog/MediaHubAddingPeoplePolicyChangedDetails;
+	public fun getMediaHubDownloadPolicyChangedDetailsValue ()Lcom/dropbox/core/v2/teamlog/MediaHubDownloadPolicyChangedDetails;
+	public fun getMediaHubFileDownloadedDetailsValue ()Lcom/dropbox/core/v2/teamlog/MediaHubFileDownloadedDetails;
+	public fun getMediaHubLinkSharingPolicyChangedDetailsValue ()Lcom/dropbox/core/v2/teamlog/MediaHubLinkSharingPolicyChangedDetails;
+	public fun getMediaHubProjectTeamAddDetailsValue ()Lcom/dropbox/core/v2/teamlog/MediaHubProjectTeamAddDetails;
+	public fun getMediaHubProjectTeamDeleteDetailsValue ()Lcom/dropbox/core/v2/teamlog/MediaHubProjectTeamDeleteDetails;
+	public fun getMediaHubProjectTeamRoleChangedDetailsValue ()Lcom/dropbox/core/v2/teamlog/MediaHubProjectTeamRoleChangedDetails;
+	public fun getMediaHubSharedLinkAudienceChangedDetailsValue ()Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkAudienceChangedDetails;
+	public fun getMediaHubSharedLinkCreatedDetailsValue ()Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkCreatedDetails;
+	public fun getMediaHubSharedLinkDownloadSettingChangedDetailsValue ()Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkDownloadSettingChangedDetails;
+	public fun getMediaHubSharedLinkRevokedDetailsValue ()Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkRevokedDetails;
 	public fun getMemberAccessDetailsCreateReportDetailsValue ()Lcom/dropbox/core/v2/teamlog/MemberAccessDetailsCreateReportDetails;
 	public fun getMemberAccessDetailsCreateReportFailedDetailsValue ()Lcom/dropbox/core/v2/teamlog/MemberAccessDetailsCreateReportFailedDetails;
 	public fun getMemberAddExternalIdDetailsValue ()Lcom/dropbox/core/v2/teamlog/MemberAddExternalIdDetails;
@@ -20122,6 +20670,7 @@ public final class com/dropbox/core/v2/teamlog/EventDetails {
 	public fun getMemberChangeStatusDetailsValue ()Lcom/dropbox/core/v2/teamlog/MemberChangeStatusDetails;
 	public fun getMemberDeleteManualContactsDetailsValue ()Lcom/dropbox/core/v2/teamlog/MemberDeleteManualContactsDetails;
 	public fun getMemberDeleteProfilePhotoDetailsValue ()Lcom/dropbox/core/v2/teamlog/MemberDeleteProfilePhotoDetails;
+	public fun getMemberFolderContentsAccessedDetailsValue ()Lcom/dropbox/core/v2/teamlog/MemberFolderContentsAccessedDetails;
 	public fun getMemberPermanentlyDeleteAccountContentsDetailsValue ()Lcom/dropbox/core/v2/teamlog/MemberPermanentlyDeleteAccountContentsDetails;
 	public fun getMemberRemoveExternalIdDetailsValue ()Lcom/dropbox/core/v2/teamlog/MemberRemoveExternalIdDetails;
 	public fun getMemberRequestsChangePolicyDetailsValue ()Lcom/dropbox/core/v2/teamlog/MemberRequestsChangePolicyDetails;
@@ -20141,6 +20690,7 @@ public final class com/dropbox/core/v2/teamlog/EventDetails {
 	public fun getMicrosoftLoginChangePolicyDetailsValue ()Lcom/dropbox/core/v2/teamlog/MicrosoftLoginChangePolicyDetails;
 	public fun getMicrosoftOfficeAddinChangePolicyDetailsValue ()Lcom/dropbox/core/v2/teamlog/MicrosoftOfficeAddinChangePolicyDetails;
 	public fun getMissingDetailsValue ()Lcom/dropbox/core/v2/teamlog/MissingDetails;
+	public fun getMultiTeamIdentityPolicyChangedDetailsValue ()Lcom/dropbox/core/v2/teamlog/MultiTeamIdentityPolicyChangedDetails;
 	public fun getNetworkControlChangePolicyDetailsValue ()Lcom/dropbox/core/v2/teamlog/NetworkControlChangePolicyDetails;
 	public fun getNoExpirationLinkGenCreateReportDetailsValue ()Lcom/dropbox/core/v2/teamlog/NoExpirationLinkGenCreateReportDetails;
 	public fun getNoExpirationLinkGenReportFailedDetailsValue ()Lcom/dropbox/core/v2/teamlog/NoExpirationLinkGenReportFailedDetails;
@@ -20222,6 +20772,13 @@ public final class com/dropbox/core/v2/teamlog/EventDetails {
 	public fun getPreviewsAiPolicyChangedDetailsValue ()Lcom/dropbox/core/v2/teamlog/PreviewsAiPolicyChangedDetails;
 	public fun getProductAssignedToMemberDetailsValue ()Lcom/dropbox/core/v2/teamlog/ProductAssignedToMemberDetails;
 	public fun getProductRemovedFromMemberDetailsValue ()Lcom/dropbox/core/v2/teamlog/ProductRemovedFromMemberDetails;
+	public fun getProtectActionAddCollaboratorDetailsValue ()Lcom/dropbox/core/v2/teamlog/ProtectActionAddCollaboratorDetails;
+	public fun getProtectActionAddLinkDetailsValue ()Lcom/dropbox/core/v2/teamlog/ProtectActionAddLinkDetails;
+	public fun getProtectActionDeleteDetailsValue ()Lcom/dropbox/core/v2/teamlog/ProtectActionDeleteDetails;
+	public fun getProtectActionExportDetailsValue ()Lcom/dropbox/core/v2/teamlog/ProtectActionExportDetails;
+	public fun getProtectActionRemoveCollaboratorDetailsValue ()Lcom/dropbox/core/v2/teamlog/ProtectActionRemoveCollaboratorDetails;
+	public fun getProtectActionRemoveLinkDetailsValue ()Lcom/dropbox/core/v2/teamlog/ProtectActionRemoveLinkDetails;
+	public fun getProtectActionStopSharingDetailsValue ()Lcom/dropbox/core/v2/teamlog/ProtectActionStopSharingDetails;
 	public fun getProtectInternalDomainsChangedDetailsValue ()Lcom/dropbox/core/v2/teamlog/ProtectInternalDomainsChangedDetails;
 	public fun getRansomwareAlertCreateReportDetailsValue ()Lcom/dropbox/core/v2/teamlog/RansomwareAlertCreateReportDetails;
 	public fun getRansomwareAlertCreateReportFailedDetailsValue ()Lcom/dropbox/core/v2/teamlog/RansomwareAlertCreateReportFailedDetails;
@@ -20752,6 +21309,17 @@ public final class com/dropbox/core/v2/teamlog/EventDetails {
 	public fun isLoginFailDetails ()Z
 	public fun isLoginSuccessDetails ()Z
 	public fun isLogoutDetails ()Z
+	public fun isMediaHubAddingPeoplePolicyChangedDetails ()Z
+	public fun isMediaHubDownloadPolicyChangedDetails ()Z
+	public fun isMediaHubFileDownloadedDetails ()Z
+	public fun isMediaHubLinkSharingPolicyChangedDetails ()Z
+	public fun isMediaHubProjectTeamAddDetails ()Z
+	public fun isMediaHubProjectTeamDeleteDetails ()Z
+	public fun isMediaHubProjectTeamRoleChangedDetails ()Z
+	public fun isMediaHubSharedLinkAudienceChangedDetails ()Z
+	public fun isMediaHubSharedLinkCreatedDetails ()Z
+	public fun isMediaHubSharedLinkDownloadSettingChangedDetails ()Z
+	public fun isMediaHubSharedLinkRevokedDetails ()Z
 	public fun isMemberAccessDetailsCreateReportDetails ()Z
 	public fun isMemberAccessDetailsCreateReportFailedDetails ()Z
 	public fun isMemberAddExternalIdDetails ()Z
@@ -20765,6 +21333,7 @@ public final class com/dropbox/core/v2/teamlog/EventDetails {
 	public fun isMemberChangeStatusDetails ()Z
 	public fun isMemberDeleteManualContactsDetails ()Z
 	public fun isMemberDeleteProfilePhotoDetails ()Z
+	public fun isMemberFolderContentsAccessedDetails ()Z
 	public fun isMemberPermanentlyDeleteAccountContentsDetails ()Z
 	public fun isMemberRemoveExternalIdDetails ()Z
 	public fun isMemberRequestsChangePolicyDetails ()Z
@@ -20784,6 +21353,7 @@ public final class com/dropbox/core/v2/teamlog/EventDetails {
 	public fun isMicrosoftLoginChangePolicyDetails ()Z
 	public fun isMicrosoftOfficeAddinChangePolicyDetails ()Z
 	public fun isMissingDetails ()Z
+	public fun isMultiTeamIdentityPolicyChangedDetails ()Z
 	public fun isNetworkControlChangePolicyDetails ()Z
 	public fun isNoExpirationLinkGenCreateReportDetails ()Z
 	public fun isNoExpirationLinkGenReportFailedDetails ()Z
@@ -20866,6 +21436,13 @@ public final class com/dropbox/core/v2/teamlog/EventDetails {
 	public fun isPreviewsAiPolicyChangedDetails ()Z
 	public fun isProductAssignedToMemberDetails ()Z
 	public fun isProductRemovedFromMemberDetails ()Z
+	public fun isProtectActionAddCollaboratorDetails ()Z
+	public fun isProtectActionAddLinkDetails ()Z
+	public fun isProtectActionDeleteDetails ()Z
+	public fun isProtectActionExportDetails ()Z
+	public fun isProtectActionRemoveCollaboratorDetails ()Z
+	public fun isProtectActionRemoveLinkDetails ()Z
+	public fun isProtectActionStopSharingDetails ()Z
 	public fun isProtectInternalDomainsChangedDetails ()Z
 	public fun isRansomwareAlertCreateReportDetails ()Z
 	public fun isRansomwareAlertCreateReportFailedDetails ()Z
@@ -21130,6 +21707,17 @@ public final class com/dropbox/core/v2/teamlog/EventDetails {
 	public static fun loginFailDetails (Lcom/dropbox/core/v2/teamlog/LoginFailDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
 	public static fun loginSuccessDetails (Lcom/dropbox/core/v2/teamlog/LoginSuccessDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
 	public static fun logoutDetails (Lcom/dropbox/core/v2/teamlog/LogoutDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
+	public static fun mediaHubAddingPeoplePolicyChangedDetails (Lcom/dropbox/core/v2/teamlog/MediaHubAddingPeoplePolicyChangedDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
+	public static fun mediaHubDownloadPolicyChangedDetails (Lcom/dropbox/core/v2/teamlog/MediaHubDownloadPolicyChangedDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
+	public static fun mediaHubFileDownloadedDetails (Lcom/dropbox/core/v2/teamlog/MediaHubFileDownloadedDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
+	public static fun mediaHubLinkSharingPolicyChangedDetails (Lcom/dropbox/core/v2/teamlog/MediaHubLinkSharingPolicyChangedDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
+	public static fun mediaHubProjectTeamAddDetails (Lcom/dropbox/core/v2/teamlog/MediaHubProjectTeamAddDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
+	public static fun mediaHubProjectTeamDeleteDetails (Lcom/dropbox/core/v2/teamlog/MediaHubProjectTeamDeleteDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
+	public static fun mediaHubProjectTeamRoleChangedDetails (Lcom/dropbox/core/v2/teamlog/MediaHubProjectTeamRoleChangedDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
+	public static fun mediaHubSharedLinkAudienceChangedDetails (Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkAudienceChangedDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
+	public static fun mediaHubSharedLinkCreatedDetails (Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkCreatedDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
+	public static fun mediaHubSharedLinkDownloadSettingChangedDetails (Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkDownloadSettingChangedDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
+	public static fun mediaHubSharedLinkRevokedDetails (Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkRevokedDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
 	public static fun memberAccessDetailsCreateReportDetails (Lcom/dropbox/core/v2/teamlog/MemberAccessDetailsCreateReportDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
 	public static fun memberAccessDetailsCreateReportFailedDetails (Lcom/dropbox/core/v2/teamlog/MemberAccessDetailsCreateReportFailedDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
 	public static fun memberAddExternalIdDetails (Lcom/dropbox/core/v2/teamlog/MemberAddExternalIdDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
@@ -21143,6 +21731,7 @@ public final class com/dropbox/core/v2/teamlog/EventDetails {
 	public static fun memberChangeStatusDetails (Lcom/dropbox/core/v2/teamlog/MemberChangeStatusDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
 	public static fun memberDeleteManualContactsDetails (Lcom/dropbox/core/v2/teamlog/MemberDeleteManualContactsDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
 	public static fun memberDeleteProfilePhotoDetails (Lcom/dropbox/core/v2/teamlog/MemberDeleteProfilePhotoDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
+	public static fun memberFolderContentsAccessedDetails (Lcom/dropbox/core/v2/teamlog/MemberFolderContentsAccessedDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
 	public static fun memberPermanentlyDeleteAccountContentsDetails (Lcom/dropbox/core/v2/teamlog/MemberPermanentlyDeleteAccountContentsDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
 	public static fun memberRemoveExternalIdDetails (Lcom/dropbox/core/v2/teamlog/MemberRemoveExternalIdDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
 	public static fun memberRequestsChangePolicyDetails (Lcom/dropbox/core/v2/teamlog/MemberRequestsChangePolicyDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
@@ -21162,6 +21751,7 @@ public final class com/dropbox/core/v2/teamlog/EventDetails {
 	public static fun microsoftLoginChangePolicyDetails (Lcom/dropbox/core/v2/teamlog/MicrosoftLoginChangePolicyDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
 	public static fun microsoftOfficeAddinChangePolicyDetails (Lcom/dropbox/core/v2/teamlog/MicrosoftOfficeAddinChangePolicyDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
 	public static fun missingDetails (Lcom/dropbox/core/v2/teamlog/MissingDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
+	public static fun multiTeamIdentityPolicyChangedDetails (Lcom/dropbox/core/v2/teamlog/MultiTeamIdentityPolicyChangedDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
 	public static fun networkControlChangePolicyDetails (Lcom/dropbox/core/v2/teamlog/NetworkControlChangePolicyDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
 	public static fun noExpirationLinkGenCreateReportDetails (Lcom/dropbox/core/v2/teamlog/NoExpirationLinkGenCreateReportDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
 	public static fun noExpirationLinkGenReportFailedDetails (Lcom/dropbox/core/v2/teamlog/NoExpirationLinkGenReportFailedDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
@@ -21243,6 +21833,13 @@ public final class com/dropbox/core/v2/teamlog/EventDetails {
 	public static fun previewsAiPolicyChangedDetails (Lcom/dropbox/core/v2/teamlog/PreviewsAiPolicyChangedDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
 	public static fun productAssignedToMemberDetails (Lcom/dropbox/core/v2/teamlog/ProductAssignedToMemberDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
 	public static fun productRemovedFromMemberDetails (Lcom/dropbox/core/v2/teamlog/ProductRemovedFromMemberDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
+	public static fun protectActionAddCollaboratorDetails (Lcom/dropbox/core/v2/teamlog/ProtectActionAddCollaboratorDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
+	public static fun protectActionAddLinkDetails (Lcom/dropbox/core/v2/teamlog/ProtectActionAddLinkDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
+	public static fun protectActionDeleteDetails (Lcom/dropbox/core/v2/teamlog/ProtectActionDeleteDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
+	public static fun protectActionExportDetails (Lcom/dropbox/core/v2/teamlog/ProtectActionExportDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
+	public static fun protectActionRemoveCollaboratorDetails (Lcom/dropbox/core/v2/teamlog/ProtectActionRemoveCollaboratorDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
+	public static fun protectActionRemoveLinkDetails (Lcom/dropbox/core/v2/teamlog/ProtectActionRemoveLinkDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
+	public static fun protectActionStopSharingDetails (Lcom/dropbox/core/v2/teamlog/ProtectActionStopSharingDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
 	public static fun protectInternalDomainsChangedDetails (Lcom/dropbox/core/v2/teamlog/ProtectInternalDomainsChangedDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
 	public static fun ransomwareAlertCreateReportDetails (Lcom/dropbox/core/v2/teamlog/RansomwareAlertCreateReportDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
 	public static fun ransomwareAlertCreateReportFailedDetails (Lcom/dropbox/core/v2/teamlog/RansomwareAlertCreateReportFailedDetails;)Lcom/dropbox/core/v2/teamlog/EventDetails;
@@ -21743,6 +22340,17 @@ public final class com/dropbox/core/v2/teamlog/EventDetails$Tag : java/lang/Enum
 	public static final field LOGIN_FAIL_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
 	public static final field LOGIN_SUCCESS_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
 	public static final field LOGOUT_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
+	public static final field MEDIA_HUB_ADDING_PEOPLE_POLICY_CHANGED_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
+	public static final field MEDIA_HUB_DOWNLOAD_POLICY_CHANGED_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
+	public static final field MEDIA_HUB_FILE_DOWNLOADED_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
+	public static final field MEDIA_HUB_LINK_SHARING_POLICY_CHANGED_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
+	public static final field MEDIA_HUB_PROJECT_TEAM_ADD_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
+	public static final field MEDIA_HUB_PROJECT_TEAM_DELETE_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
+	public static final field MEDIA_HUB_PROJECT_TEAM_ROLE_CHANGED_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
+	public static final field MEDIA_HUB_SHARED_LINK_AUDIENCE_CHANGED_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
+	public static final field MEDIA_HUB_SHARED_LINK_CREATED_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
+	public static final field MEDIA_HUB_SHARED_LINK_DOWNLOAD_SETTING_CHANGED_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
+	public static final field MEDIA_HUB_SHARED_LINK_REVOKED_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
 	public static final field MEMBER_ACCESS_DETAILS_CREATE_REPORT_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
 	public static final field MEMBER_ACCESS_DETAILS_CREATE_REPORT_FAILED_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
 	public static final field MEMBER_ADD_EXTERNAL_ID_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
@@ -21756,6 +22364,7 @@ public final class com/dropbox/core/v2/teamlog/EventDetails$Tag : java/lang/Enum
 	public static final field MEMBER_CHANGE_STATUS_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
 	public static final field MEMBER_DELETE_MANUAL_CONTACTS_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
 	public static final field MEMBER_DELETE_PROFILE_PHOTO_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
+	public static final field MEMBER_FOLDER_CONTENTS_ACCESSED_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
 	public static final field MEMBER_PERMANENTLY_DELETE_ACCOUNT_CONTENTS_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
 	public static final field MEMBER_REMOVE_EXTERNAL_ID_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
 	public static final field MEMBER_REQUESTS_CHANGE_POLICY_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
@@ -21775,6 +22384,7 @@ public final class com/dropbox/core/v2/teamlog/EventDetails$Tag : java/lang/Enum
 	public static final field MICROSOFT_LOGIN_CHANGE_POLICY_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
 	public static final field MICROSOFT_OFFICE_ADDIN_CHANGE_POLICY_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
 	public static final field MISSING_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
+	public static final field MULTI_TEAM_IDENTITY_POLICY_CHANGED_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
 	public static final field NETWORK_CONTROL_CHANGE_POLICY_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
 	public static final field NOTE_ACL_INVITE_ONLY_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
 	public static final field NOTE_ACL_LINK_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
@@ -21857,6 +22467,13 @@ public final class com/dropbox/core/v2/teamlog/EventDetails$Tag : java/lang/Enum
 	public static final field PREVIEWS_AI_POLICY_CHANGED_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
 	public static final field PRODUCT_ASSIGNED_TO_MEMBER_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
 	public static final field PRODUCT_REMOVED_FROM_MEMBER_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
+	public static final field PROTECT_ACTION_ADD_COLLABORATOR_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
+	public static final field PROTECT_ACTION_ADD_LINK_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
+	public static final field PROTECT_ACTION_DELETE_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
+	public static final field PROTECT_ACTION_EXPORT_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
+	public static final field PROTECT_ACTION_REMOVE_COLLABORATOR_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
+	public static final field PROTECT_ACTION_REMOVE_LINK_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
+	public static final field PROTECT_ACTION_STOP_SHARING_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
 	public static final field PROTECT_INTERNAL_DOMAINS_CHANGED_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
 	public static final field RANSOMWARE_ALERT_CREATE_REPORT_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
 	public static final field RANSOMWARE_ALERT_CREATE_REPORT_FAILED_DETAILS Lcom/dropbox/core/v2/teamlog/EventDetails$Tag;
@@ -22553,6 +23170,17 @@ public final class com/dropbox/core/v2/teamlog/EventType {
 	public fun getLoginFailValue ()Lcom/dropbox/core/v2/teamlog/LoginFailType;
 	public fun getLoginSuccessValue ()Lcom/dropbox/core/v2/teamlog/LoginSuccessType;
 	public fun getLogoutValue ()Lcom/dropbox/core/v2/teamlog/LogoutType;
+	public fun getMediaHubAddingPeoplePolicyChangedValue ()Lcom/dropbox/core/v2/teamlog/MediaHubAddingPeoplePolicyChangedType;
+	public fun getMediaHubDownloadPolicyChangedValue ()Lcom/dropbox/core/v2/teamlog/MediaHubDownloadPolicyChangedType;
+	public fun getMediaHubFileDownloadedValue ()Lcom/dropbox/core/v2/teamlog/MediaHubFileDownloadedType;
+	public fun getMediaHubLinkSharingPolicyChangedValue ()Lcom/dropbox/core/v2/teamlog/MediaHubLinkSharingPolicyChangedType;
+	public fun getMediaHubProjectTeamAddValue ()Lcom/dropbox/core/v2/teamlog/MediaHubProjectTeamAddType;
+	public fun getMediaHubProjectTeamDeleteValue ()Lcom/dropbox/core/v2/teamlog/MediaHubProjectTeamDeleteType;
+	public fun getMediaHubProjectTeamRoleChangedValue ()Lcom/dropbox/core/v2/teamlog/MediaHubProjectTeamRoleChangedType;
+	public fun getMediaHubSharedLinkAudienceChangedValue ()Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkAudienceChangedType;
+	public fun getMediaHubSharedLinkCreatedValue ()Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkCreatedType;
+	public fun getMediaHubSharedLinkDownloadSettingChangedValue ()Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkDownloadSettingChangedType;
+	public fun getMediaHubSharedLinkRevokedValue ()Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkRevokedType;
 	public fun getMemberAccessDetailsCreateReportFailedValue ()Lcom/dropbox/core/v2/teamlog/MemberAccessDetailsCreateReportFailedType;
 	public fun getMemberAccessDetailsCreateReportValue ()Lcom/dropbox/core/v2/teamlog/MemberAccessDetailsCreateReportType;
 	public fun getMemberAddExternalIdValue ()Lcom/dropbox/core/v2/teamlog/MemberAddExternalIdType;
@@ -22566,6 +23194,7 @@ public final class com/dropbox/core/v2/teamlog/EventType {
 	public fun getMemberChangeStatusValue ()Lcom/dropbox/core/v2/teamlog/MemberChangeStatusType;
 	public fun getMemberDeleteManualContactsValue ()Lcom/dropbox/core/v2/teamlog/MemberDeleteManualContactsType;
 	public fun getMemberDeleteProfilePhotoValue ()Lcom/dropbox/core/v2/teamlog/MemberDeleteProfilePhotoType;
+	public fun getMemberFolderContentsAccessedValue ()Lcom/dropbox/core/v2/teamlog/MemberFolderContentsAccessedType;
 	public fun getMemberPermanentlyDeleteAccountContentsValue ()Lcom/dropbox/core/v2/teamlog/MemberPermanentlyDeleteAccountContentsType;
 	public fun getMemberRemoveExternalIdValue ()Lcom/dropbox/core/v2/teamlog/MemberRemoveExternalIdType;
 	public fun getMemberRequestsChangePolicyValue ()Lcom/dropbox/core/v2/teamlog/MemberRequestsChangePolicyType;
@@ -22584,6 +23213,7 @@ public final class com/dropbox/core/v2/teamlog/EventType {
 	public fun getMemberTransferAccountContentsValue ()Lcom/dropbox/core/v2/teamlog/MemberTransferAccountContentsType;
 	public fun getMicrosoftLoginChangePolicyValue ()Lcom/dropbox/core/v2/teamlog/MicrosoftLoginChangePolicyType;
 	public fun getMicrosoftOfficeAddinChangePolicyValue ()Lcom/dropbox/core/v2/teamlog/MicrosoftOfficeAddinChangePolicyType;
+	public fun getMultiTeamIdentityPolicyChangedValue ()Lcom/dropbox/core/v2/teamlog/MultiTeamIdentityPolicyChangedType;
 	public fun getNetworkControlChangePolicyValue ()Lcom/dropbox/core/v2/teamlog/NetworkControlChangePolicyType;
 	public fun getNoExpirationLinkGenCreateReportValue ()Lcom/dropbox/core/v2/teamlog/NoExpirationLinkGenCreateReportType;
 	public fun getNoExpirationLinkGenReportFailedValue ()Lcom/dropbox/core/v2/teamlog/NoExpirationLinkGenReportFailedType;
@@ -22665,6 +23295,13 @@ public final class com/dropbox/core/v2/teamlog/EventType {
 	public fun getPreviewsAiPolicyChangedValue ()Lcom/dropbox/core/v2/teamlog/PreviewsAiPolicyChangedType;
 	public fun getProductAssignedToMemberValue ()Lcom/dropbox/core/v2/teamlog/ProductAssignedToMemberType;
 	public fun getProductRemovedFromMemberValue ()Lcom/dropbox/core/v2/teamlog/ProductRemovedFromMemberType;
+	public fun getProtectActionAddCollaboratorValue ()Lcom/dropbox/core/v2/teamlog/ProtectActionAddCollaboratorType;
+	public fun getProtectActionAddLinkValue ()Lcom/dropbox/core/v2/teamlog/ProtectActionAddLinkType;
+	public fun getProtectActionDeleteValue ()Lcom/dropbox/core/v2/teamlog/ProtectActionDeleteType;
+	public fun getProtectActionExportValue ()Lcom/dropbox/core/v2/teamlog/ProtectActionExportType;
+	public fun getProtectActionRemoveCollaboratorValue ()Lcom/dropbox/core/v2/teamlog/ProtectActionRemoveCollaboratorType;
+	public fun getProtectActionRemoveLinkValue ()Lcom/dropbox/core/v2/teamlog/ProtectActionRemoveLinkType;
+	public fun getProtectActionStopSharingValue ()Lcom/dropbox/core/v2/teamlog/ProtectActionStopSharingType;
 	public fun getProtectInternalDomainsChangedValue ()Lcom/dropbox/core/v2/teamlog/ProtectInternalDomainsChangedType;
 	public fun getRansomwareAlertCreateReportFailedValue ()Lcom/dropbox/core/v2/teamlog/RansomwareAlertCreateReportFailedType;
 	public fun getRansomwareAlertCreateReportValue ()Lcom/dropbox/core/v2/teamlog/RansomwareAlertCreateReportType;
@@ -23195,6 +23832,17 @@ public final class com/dropbox/core/v2/teamlog/EventType {
 	public fun isLoginFail ()Z
 	public fun isLoginSuccess ()Z
 	public fun isLogout ()Z
+	public fun isMediaHubAddingPeoplePolicyChanged ()Z
+	public fun isMediaHubDownloadPolicyChanged ()Z
+	public fun isMediaHubFileDownloaded ()Z
+	public fun isMediaHubLinkSharingPolicyChanged ()Z
+	public fun isMediaHubProjectTeamAdd ()Z
+	public fun isMediaHubProjectTeamDelete ()Z
+	public fun isMediaHubProjectTeamRoleChanged ()Z
+	public fun isMediaHubSharedLinkAudienceChanged ()Z
+	public fun isMediaHubSharedLinkCreated ()Z
+	public fun isMediaHubSharedLinkDownloadSettingChanged ()Z
+	public fun isMediaHubSharedLinkRevoked ()Z
 	public fun isMemberAccessDetailsCreateReport ()Z
 	public fun isMemberAccessDetailsCreateReportFailed ()Z
 	public fun isMemberAddExternalId ()Z
@@ -23208,6 +23856,7 @@ public final class com/dropbox/core/v2/teamlog/EventType {
 	public fun isMemberChangeStatus ()Z
 	public fun isMemberDeleteManualContacts ()Z
 	public fun isMemberDeleteProfilePhoto ()Z
+	public fun isMemberFolderContentsAccessed ()Z
 	public fun isMemberPermanentlyDeleteAccountContents ()Z
 	public fun isMemberRemoveExternalId ()Z
 	public fun isMemberRequestsChangePolicy ()Z
@@ -23226,6 +23875,7 @@ public final class com/dropbox/core/v2/teamlog/EventType {
 	public fun isMemberTransferAccountContents ()Z
 	public fun isMicrosoftLoginChangePolicy ()Z
 	public fun isMicrosoftOfficeAddinChangePolicy ()Z
+	public fun isMultiTeamIdentityPolicyChanged ()Z
 	public fun isNetworkControlChangePolicy ()Z
 	public fun isNoExpirationLinkGenCreateReport ()Z
 	public fun isNoExpirationLinkGenReportFailed ()Z
@@ -23308,6 +23958,13 @@ public final class com/dropbox/core/v2/teamlog/EventType {
 	public fun isPreviewsAiPolicyChanged ()Z
 	public fun isProductAssignedToMember ()Z
 	public fun isProductRemovedFromMember ()Z
+	public fun isProtectActionAddCollaborator ()Z
+	public fun isProtectActionAddLink ()Z
+	public fun isProtectActionDelete ()Z
+	public fun isProtectActionExport ()Z
+	public fun isProtectActionRemoveCollaborator ()Z
+	public fun isProtectActionRemoveLink ()Z
+	public fun isProtectActionStopSharing ()Z
 	public fun isProtectInternalDomainsChanged ()Z
 	public fun isRansomwareAlertCreateReport ()Z
 	public fun isRansomwareAlertCreateReportFailed ()Z
@@ -23572,6 +24229,17 @@ public final class com/dropbox/core/v2/teamlog/EventType {
 	public static fun loginFail (Lcom/dropbox/core/v2/teamlog/LoginFailType;)Lcom/dropbox/core/v2/teamlog/EventType;
 	public static fun loginSuccess (Lcom/dropbox/core/v2/teamlog/LoginSuccessType;)Lcom/dropbox/core/v2/teamlog/EventType;
 	public static fun logout (Lcom/dropbox/core/v2/teamlog/LogoutType;)Lcom/dropbox/core/v2/teamlog/EventType;
+	public static fun mediaHubAddingPeoplePolicyChanged (Lcom/dropbox/core/v2/teamlog/MediaHubAddingPeoplePolicyChangedType;)Lcom/dropbox/core/v2/teamlog/EventType;
+	public static fun mediaHubDownloadPolicyChanged (Lcom/dropbox/core/v2/teamlog/MediaHubDownloadPolicyChangedType;)Lcom/dropbox/core/v2/teamlog/EventType;
+	public static fun mediaHubFileDownloaded (Lcom/dropbox/core/v2/teamlog/MediaHubFileDownloadedType;)Lcom/dropbox/core/v2/teamlog/EventType;
+	public static fun mediaHubLinkSharingPolicyChanged (Lcom/dropbox/core/v2/teamlog/MediaHubLinkSharingPolicyChangedType;)Lcom/dropbox/core/v2/teamlog/EventType;
+	public static fun mediaHubProjectTeamAdd (Lcom/dropbox/core/v2/teamlog/MediaHubProjectTeamAddType;)Lcom/dropbox/core/v2/teamlog/EventType;
+	public static fun mediaHubProjectTeamDelete (Lcom/dropbox/core/v2/teamlog/MediaHubProjectTeamDeleteType;)Lcom/dropbox/core/v2/teamlog/EventType;
+	public static fun mediaHubProjectTeamRoleChanged (Lcom/dropbox/core/v2/teamlog/MediaHubProjectTeamRoleChangedType;)Lcom/dropbox/core/v2/teamlog/EventType;
+	public static fun mediaHubSharedLinkAudienceChanged (Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkAudienceChangedType;)Lcom/dropbox/core/v2/teamlog/EventType;
+	public static fun mediaHubSharedLinkCreated (Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkCreatedType;)Lcom/dropbox/core/v2/teamlog/EventType;
+	public static fun mediaHubSharedLinkDownloadSettingChanged (Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkDownloadSettingChangedType;)Lcom/dropbox/core/v2/teamlog/EventType;
+	public static fun mediaHubSharedLinkRevoked (Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkRevokedType;)Lcom/dropbox/core/v2/teamlog/EventType;
 	public static fun memberAccessDetailsCreateReport (Lcom/dropbox/core/v2/teamlog/MemberAccessDetailsCreateReportType;)Lcom/dropbox/core/v2/teamlog/EventType;
 	public static fun memberAccessDetailsCreateReportFailed (Lcom/dropbox/core/v2/teamlog/MemberAccessDetailsCreateReportFailedType;)Lcom/dropbox/core/v2/teamlog/EventType;
 	public static fun memberAddExternalId (Lcom/dropbox/core/v2/teamlog/MemberAddExternalIdType;)Lcom/dropbox/core/v2/teamlog/EventType;
@@ -23585,6 +24253,7 @@ public final class com/dropbox/core/v2/teamlog/EventType {
 	public static fun memberChangeStatus (Lcom/dropbox/core/v2/teamlog/MemberChangeStatusType;)Lcom/dropbox/core/v2/teamlog/EventType;
 	public static fun memberDeleteManualContacts (Lcom/dropbox/core/v2/teamlog/MemberDeleteManualContactsType;)Lcom/dropbox/core/v2/teamlog/EventType;
 	public static fun memberDeleteProfilePhoto (Lcom/dropbox/core/v2/teamlog/MemberDeleteProfilePhotoType;)Lcom/dropbox/core/v2/teamlog/EventType;
+	public static fun memberFolderContentsAccessed (Lcom/dropbox/core/v2/teamlog/MemberFolderContentsAccessedType;)Lcom/dropbox/core/v2/teamlog/EventType;
 	public static fun memberPermanentlyDeleteAccountContents (Lcom/dropbox/core/v2/teamlog/MemberPermanentlyDeleteAccountContentsType;)Lcom/dropbox/core/v2/teamlog/EventType;
 	public static fun memberRemoveExternalId (Lcom/dropbox/core/v2/teamlog/MemberRemoveExternalIdType;)Lcom/dropbox/core/v2/teamlog/EventType;
 	public static fun memberRequestsChangePolicy (Lcom/dropbox/core/v2/teamlog/MemberRequestsChangePolicyType;)Lcom/dropbox/core/v2/teamlog/EventType;
@@ -23603,6 +24272,7 @@ public final class com/dropbox/core/v2/teamlog/EventType {
 	public static fun memberTransferAccountContents (Lcom/dropbox/core/v2/teamlog/MemberTransferAccountContentsType;)Lcom/dropbox/core/v2/teamlog/EventType;
 	public static fun microsoftLoginChangePolicy (Lcom/dropbox/core/v2/teamlog/MicrosoftLoginChangePolicyType;)Lcom/dropbox/core/v2/teamlog/EventType;
 	public static fun microsoftOfficeAddinChangePolicy (Lcom/dropbox/core/v2/teamlog/MicrosoftOfficeAddinChangePolicyType;)Lcom/dropbox/core/v2/teamlog/EventType;
+	public static fun multiTeamIdentityPolicyChanged (Lcom/dropbox/core/v2/teamlog/MultiTeamIdentityPolicyChangedType;)Lcom/dropbox/core/v2/teamlog/EventType;
 	public static fun networkControlChangePolicy (Lcom/dropbox/core/v2/teamlog/NetworkControlChangePolicyType;)Lcom/dropbox/core/v2/teamlog/EventType;
 	public static fun noExpirationLinkGenCreateReport (Lcom/dropbox/core/v2/teamlog/NoExpirationLinkGenCreateReportType;)Lcom/dropbox/core/v2/teamlog/EventType;
 	public static fun noExpirationLinkGenReportFailed (Lcom/dropbox/core/v2/teamlog/NoExpirationLinkGenReportFailedType;)Lcom/dropbox/core/v2/teamlog/EventType;
@@ -23684,6 +24354,13 @@ public final class com/dropbox/core/v2/teamlog/EventType {
 	public static fun previewsAiPolicyChanged (Lcom/dropbox/core/v2/teamlog/PreviewsAiPolicyChangedType;)Lcom/dropbox/core/v2/teamlog/EventType;
 	public static fun productAssignedToMember (Lcom/dropbox/core/v2/teamlog/ProductAssignedToMemberType;)Lcom/dropbox/core/v2/teamlog/EventType;
 	public static fun productRemovedFromMember (Lcom/dropbox/core/v2/teamlog/ProductRemovedFromMemberType;)Lcom/dropbox/core/v2/teamlog/EventType;
+	public static fun protectActionAddCollaborator (Lcom/dropbox/core/v2/teamlog/ProtectActionAddCollaboratorType;)Lcom/dropbox/core/v2/teamlog/EventType;
+	public static fun protectActionAddLink (Lcom/dropbox/core/v2/teamlog/ProtectActionAddLinkType;)Lcom/dropbox/core/v2/teamlog/EventType;
+	public static fun protectActionDelete (Lcom/dropbox/core/v2/teamlog/ProtectActionDeleteType;)Lcom/dropbox/core/v2/teamlog/EventType;
+	public static fun protectActionExport (Lcom/dropbox/core/v2/teamlog/ProtectActionExportType;)Lcom/dropbox/core/v2/teamlog/EventType;
+	public static fun protectActionRemoveCollaborator (Lcom/dropbox/core/v2/teamlog/ProtectActionRemoveCollaboratorType;)Lcom/dropbox/core/v2/teamlog/EventType;
+	public static fun protectActionRemoveLink (Lcom/dropbox/core/v2/teamlog/ProtectActionRemoveLinkType;)Lcom/dropbox/core/v2/teamlog/EventType;
+	public static fun protectActionStopSharing (Lcom/dropbox/core/v2/teamlog/ProtectActionStopSharingType;)Lcom/dropbox/core/v2/teamlog/EventType;
 	public static fun protectInternalDomainsChanged (Lcom/dropbox/core/v2/teamlog/ProtectInternalDomainsChangedType;)Lcom/dropbox/core/v2/teamlog/EventType;
 	public static fun ransomwareAlertCreateReport (Lcom/dropbox/core/v2/teamlog/RansomwareAlertCreateReportType;)Lcom/dropbox/core/v2/teamlog/EventType;
 	public static fun ransomwareAlertCreateReportFailed (Lcom/dropbox/core/v2/teamlog/RansomwareAlertCreateReportFailedType;)Lcom/dropbox/core/v2/teamlog/EventType;
@@ -24184,6 +24861,17 @@ public final class com/dropbox/core/v2/teamlog/EventType$Tag : java/lang/Enum {
 	public static final field LOGIN_FAIL Lcom/dropbox/core/v2/teamlog/EventType$Tag;
 	public static final field LOGIN_SUCCESS Lcom/dropbox/core/v2/teamlog/EventType$Tag;
 	public static final field LOGOUT Lcom/dropbox/core/v2/teamlog/EventType$Tag;
+	public static final field MEDIA_HUB_ADDING_PEOPLE_POLICY_CHANGED Lcom/dropbox/core/v2/teamlog/EventType$Tag;
+	public static final field MEDIA_HUB_DOWNLOAD_POLICY_CHANGED Lcom/dropbox/core/v2/teamlog/EventType$Tag;
+	public static final field MEDIA_HUB_FILE_DOWNLOADED Lcom/dropbox/core/v2/teamlog/EventType$Tag;
+	public static final field MEDIA_HUB_LINK_SHARING_POLICY_CHANGED Lcom/dropbox/core/v2/teamlog/EventType$Tag;
+	public static final field MEDIA_HUB_PROJECT_TEAM_ADD Lcom/dropbox/core/v2/teamlog/EventType$Tag;
+	public static final field MEDIA_HUB_PROJECT_TEAM_DELETE Lcom/dropbox/core/v2/teamlog/EventType$Tag;
+	public static final field MEDIA_HUB_PROJECT_TEAM_ROLE_CHANGED Lcom/dropbox/core/v2/teamlog/EventType$Tag;
+	public static final field MEDIA_HUB_SHARED_LINK_AUDIENCE_CHANGED Lcom/dropbox/core/v2/teamlog/EventType$Tag;
+	public static final field MEDIA_HUB_SHARED_LINK_CREATED Lcom/dropbox/core/v2/teamlog/EventType$Tag;
+	public static final field MEDIA_HUB_SHARED_LINK_DOWNLOAD_SETTING_CHANGED Lcom/dropbox/core/v2/teamlog/EventType$Tag;
+	public static final field MEDIA_HUB_SHARED_LINK_REVOKED Lcom/dropbox/core/v2/teamlog/EventType$Tag;
 	public static final field MEMBER_ACCESS_DETAILS_CREATE_REPORT Lcom/dropbox/core/v2/teamlog/EventType$Tag;
 	public static final field MEMBER_ACCESS_DETAILS_CREATE_REPORT_FAILED Lcom/dropbox/core/v2/teamlog/EventType$Tag;
 	public static final field MEMBER_ADD_EXTERNAL_ID Lcom/dropbox/core/v2/teamlog/EventType$Tag;
@@ -24197,6 +24885,7 @@ public final class com/dropbox/core/v2/teamlog/EventType$Tag : java/lang/Enum {
 	public static final field MEMBER_CHANGE_STATUS Lcom/dropbox/core/v2/teamlog/EventType$Tag;
 	public static final field MEMBER_DELETE_MANUAL_CONTACTS Lcom/dropbox/core/v2/teamlog/EventType$Tag;
 	public static final field MEMBER_DELETE_PROFILE_PHOTO Lcom/dropbox/core/v2/teamlog/EventType$Tag;
+	public static final field MEMBER_FOLDER_CONTENTS_ACCESSED Lcom/dropbox/core/v2/teamlog/EventType$Tag;
 	public static final field MEMBER_PERMANENTLY_DELETE_ACCOUNT_CONTENTS Lcom/dropbox/core/v2/teamlog/EventType$Tag;
 	public static final field MEMBER_REMOVE_EXTERNAL_ID Lcom/dropbox/core/v2/teamlog/EventType$Tag;
 	public static final field MEMBER_REQUESTS_CHANGE_POLICY Lcom/dropbox/core/v2/teamlog/EventType$Tag;
@@ -24215,6 +24904,7 @@ public final class com/dropbox/core/v2/teamlog/EventType$Tag : java/lang/Enum {
 	public static final field MEMBER_TRANSFER_ACCOUNT_CONTENTS Lcom/dropbox/core/v2/teamlog/EventType$Tag;
 	public static final field MICROSOFT_LOGIN_CHANGE_POLICY Lcom/dropbox/core/v2/teamlog/EventType$Tag;
 	public static final field MICROSOFT_OFFICE_ADDIN_CHANGE_POLICY Lcom/dropbox/core/v2/teamlog/EventType$Tag;
+	public static final field MULTI_TEAM_IDENTITY_POLICY_CHANGED Lcom/dropbox/core/v2/teamlog/EventType$Tag;
 	public static final field NETWORK_CONTROL_CHANGE_POLICY Lcom/dropbox/core/v2/teamlog/EventType$Tag;
 	public static final field NOTE_ACL_INVITE_ONLY Lcom/dropbox/core/v2/teamlog/EventType$Tag;
 	public static final field NOTE_ACL_LINK Lcom/dropbox/core/v2/teamlog/EventType$Tag;
@@ -24297,6 +24987,13 @@ public final class com/dropbox/core/v2/teamlog/EventType$Tag : java/lang/Enum {
 	public static final field PREVIEWS_AI_POLICY_CHANGED Lcom/dropbox/core/v2/teamlog/EventType$Tag;
 	public static final field PRODUCT_ASSIGNED_TO_MEMBER Lcom/dropbox/core/v2/teamlog/EventType$Tag;
 	public static final field PRODUCT_REMOVED_FROM_MEMBER Lcom/dropbox/core/v2/teamlog/EventType$Tag;
+	public static final field PROTECT_ACTION_ADD_COLLABORATOR Lcom/dropbox/core/v2/teamlog/EventType$Tag;
+	public static final field PROTECT_ACTION_ADD_LINK Lcom/dropbox/core/v2/teamlog/EventType$Tag;
+	public static final field PROTECT_ACTION_DELETE Lcom/dropbox/core/v2/teamlog/EventType$Tag;
+	public static final field PROTECT_ACTION_EXPORT Lcom/dropbox/core/v2/teamlog/EventType$Tag;
+	public static final field PROTECT_ACTION_REMOVE_COLLABORATOR Lcom/dropbox/core/v2/teamlog/EventType$Tag;
+	public static final field PROTECT_ACTION_REMOVE_LINK Lcom/dropbox/core/v2/teamlog/EventType$Tag;
+	public static final field PROTECT_ACTION_STOP_SHARING Lcom/dropbox/core/v2/teamlog/EventType$Tag;
 	public static final field PROTECT_INTERNAL_DOMAINS_CHANGED Lcom/dropbox/core/v2/teamlog/EventType$Tag;
 	public static final field RANSOMWARE_ALERT_CREATE_REPORT Lcom/dropbox/core/v2/teamlog/EventType$Tag;
 	public static final field RANSOMWARE_ALERT_CREATE_REPORT_FAILED Lcom/dropbox/core/v2/teamlog/EventType$Tag;
@@ -24796,6 +25493,17 @@ public final class com/dropbox/core/v2/teamlog/EventTypeArg : java/lang/Enum {
 	public static final field LOGIN_FAIL Lcom/dropbox/core/v2/teamlog/EventTypeArg;
 	public static final field LOGIN_SUCCESS Lcom/dropbox/core/v2/teamlog/EventTypeArg;
 	public static final field LOGOUT Lcom/dropbox/core/v2/teamlog/EventTypeArg;
+	public static final field MEDIA_HUB_ADDING_PEOPLE_POLICY_CHANGED Lcom/dropbox/core/v2/teamlog/EventTypeArg;
+	public static final field MEDIA_HUB_DOWNLOAD_POLICY_CHANGED Lcom/dropbox/core/v2/teamlog/EventTypeArg;
+	public static final field MEDIA_HUB_FILE_DOWNLOADED Lcom/dropbox/core/v2/teamlog/EventTypeArg;
+	public static final field MEDIA_HUB_LINK_SHARING_POLICY_CHANGED Lcom/dropbox/core/v2/teamlog/EventTypeArg;
+	public static final field MEDIA_HUB_PROJECT_TEAM_ADD Lcom/dropbox/core/v2/teamlog/EventTypeArg;
+	public static final field MEDIA_HUB_PROJECT_TEAM_DELETE Lcom/dropbox/core/v2/teamlog/EventTypeArg;
+	public static final field MEDIA_HUB_PROJECT_TEAM_ROLE_CHANGED Lcom/dropbox/core/v2/teamlog/EventTypeArg;
+	public static final field MEDIA_HUB_SHARED_LINK_AUDIENCE_CHANGED Lcom/dropbox/core/v2/teamlog/EventTypeArg;
+	public static final field MEDIA_HUB_SHARED_LINK_CREATED Lcom/dropbox/core/v2/teamlog/EventTypeArg;
+	public static final field MEDIA_HUB_SHARED_LINK_DOWNLOAD_SETTING_CHANGED Lcom/dropbox/core/v2/teamlog/EventTypeArg;
+	public static final field MEDIA_HUB_SHARED_LINK_REVOKED Lcom/dropbox/core/v2/teamlog/EventTypeArg;
 	public static final field MEMBER_ACCESS_DETAILS_CREATE_REPORT Lcom/dropbox/core/v2/teamlog/EventTypeArg;
 	public static final field MEMBER_ACCESS_DETAILS_CREATE_REPORT_FAILED Lcom/dropbox/core/v2/teamlog/EventTypeArg;
 	public static final field MEMBER_ADD_EXTERNAL_ID Lcom/dropbox/core/v2/teamlog/EventTypeArg;
@@ -24809,6 +25517,7 @@ public final class com/dropbox/core/v2/teamlog/EventTypeArg : java/lang/Enum {
 	public static final field MEMBER_CHANGE_STATUS Lcom/dropbox/core/v2/teamlog/EventTypeArg;
 	public static final field MEMBER_DELETE_MANUAL_CONTACTS Lcom/dropbox/core/v2/teamlog/EventTypeArg;
 	public static final field MEMBER_DELETE_PROFILE_PHOTO Lcom/dropbox/core/v2/teamlog/EventTypeArg;
+	public static final field MEMBER_FOLDER_CONTENTS_ACCESSED Lcom/dropbox/core/v2/teamlog/EventTypeArg;
 	public static final field MEMBER_PERMANENTLY_DELETE_ACCOUNT_CONTENTS Lcom/dropbox/core/v2/teamlog/EventTypeArg;
 	public static final field MEMBER_REMOVE_EXTERNAL_ID Lcom/dropbox/core/v2/teamlog/EventTypeArg;
 	public static final field MEMBER_REQUESTS_CHANGE_POLICY Lcom/dropbox/core/v2/teamlog/EventTypeArg;
@@ -24827,6 +25536,7 @@ public final class com/dropbox/core/v2/teamlog/EventTypeArg : java/lang/Enum {
 	public static final field MEMBER_TRANSFER_ACCOUNT_CONTENTS Lcom/dropbox/core/v2/teamlog/EventTypeArg;
 	public static final field MICROSOFT_LOGIN_CHANGE_POLICY Lcom/dropbox/core/v2/teamlog/EventTypeArg;
 	public static final field MICROSOFT_OFFICE_ADDIN_CHANGE_POLICY Lcom/dropbox/core/v2/teamlog/EventTypeArg;
+	public static final field MULTI_TEAM_IDENTITY_POLICY_CHANGED Lcom/dropbox/core/v2/teamlog/EventTypeArg;
 	public static final field NETWORK_CONTROL_CHANGE_POLICY Lcom/dropbox/core/v2/teamlog/EventTypeArg;
 	public static final field NOTE_ACL_INVITE_ONLY Lcom/dropbox/core/v2/teamlog/EventTypeArg;
 	public static final field NOTE_ACL_LINK Lcom/dropbox/core/v2/teamlog/EventTypeArg;
@@ -24909,6 +25619,13 @@ public final class com/dropbox/core/v2/teamlog/EventTypeArg : java/lang/Enum {
 	public static final field PREVIEWS_AI_POLICY_CHANGED Lcom/dropbox/core/v2/teamlog/EventTypeArg;
 	public static final field PRODUCT_ASSIGNED_TO_MEMBER Lcom/dropbox/core/v2/teamlog/EventTypeArg;
 	public static final field PRODUCT_REMOVED_FROM_MEMBER Lcom/dropbox/core/v2/teamlog/EventTypeArg;
+	public static final field PROTECT_ACTION_ADD_COLLABORATOR Lcom/dropbox/core/v2/teamlog/EventTypeArg;
+	public static final field PROTECT_ACTION_ADD_LINK Lcom/dropbox/core/v2/teamlog/EventTypeArg;
+	public static final field PROTECT_ACTION_DELETE Lcom/dropbox/core/v2/teamlog/EventTypeArg;
+	public static final field PROTECT_ACTION_EXPORT Lcom/dropbox/core/v2/teamlog/EventTypeArg;
+	public static final field PROTECT_ACTION_REMOVE_COLLABORATOR Lcom/dropbox/core/v2/teamlog/EventTypeArg;
+	public static final field PROTECT_ACTION_REMOVE_LINK Lcom/dropbox/core/v2/teamlog/EventTypeArg;
+	public static final field PROTECT_ACTION_STOP_SHARING Lcom/dropbox/core/v2/teamlog/EventTypeArg;
 	public static final field PROTECT_INTERNAL_DOMAINS_CHANGED Lcom/dropbox/core/v2/teamlog/EventTypeArg;
 	public static final field RANSOMWARE_ALERT_CREATE_REPORT Lcom/dropbox/core/v2/teamlog/EventTypeArg;
 	public static final field RANSOMWARE_ALERT_CREATE_REPORT_FAILED Lcom/dropbox/core/v2/teamlog/EventTypeArg;
@@ -28415,6 +29132,331 @@ public class com/dropbox/core/v2/teamlog/MalwareExclusionState$Builder {
 	public fun withFilePathFromLastInclusion (Ljava/lang/String;)Lcom/dropbox/core/v2/teamlog/MalwareExclusionState$Builder;
 }
 
+public final class com/dropbox/core/v2/teamlog/MediaHubAddingPeoplePolicy : java/lang/Enum {
+	public static final field ANYONE Lcom/dropbox/core/v2/teamlog/MediaHubAddingPeoplePolicy;
+	public static final field OTHER Lcom/dropbox/core/v2/teamlog/MediaHubAddingPeoplePolicy;
+	public static final field TEAM_ONLY Lcom/dropbox/core/v2/teamlog/MediaHubAddingPeoplePolicy;
+	public static fun valueOf (Ljava/lang/String;)Lcom/dropbox/core/v2/teamlog/MediaHubAddingPeoplePolicy;
+	public static fun values ()[Lcom/dropbox/core/v2/teamlog/MediaHubAddingPeoplePolicy;
+}
+
+public class com/dropbox/core/v2/teamlog/MediaHubAddingPeoplePolicyChangedDetails {
+	protected final field newValue Lcom/dropbox/core/v2/teamlog/MediaHubAddingPeoplePolicy;
+	protected final field previousValue Lcom/dropbox/core/v2/teamlog/MediaHubAddingPeoplePolicy;
+	public fun <init> (Lcom/dropbox/core/v2/teamlog/MediaHubAddingPeoplePolicy;Lcom/dropbox/core/v2/teamlog/MediaHubAddingPeoplePolicy;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getNewValue ()Lcom/dropbox/core/v2/teamlog/MediaHubAddingPeoplePolicy;
+	public fun getPreviousValue ()Lcom/dropbox/core/v2/teamlog/MediaHubAddingPeoplePolicy;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/MediaHubAddingPeoplePolicyChangedType {
+	protected final field description Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getDescription ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public final class com/dropbox/core/v2/teamlog/MediaHubDownloadPolicy : java/lang/Enum {
+	public static final field DISABLED Lcom/dropbox/core/v2/teamlog/MediaHubDownloadPolicy;
+	public static final field ENABLED Lcom/dropbox/core/v2/teamlog/MediaHubDownloadPolicy;
+	public static final field OTHER Lcom/dropbox/core/v2/teamlog/MediaHubDownloadPolicy;
+	public static fun valueOf (Ljava/lang/String;)Lcom/dropbox/core/v2/teamlog/MediaHubDownloadPolicy;
+	public static fun values ()[Lcom/dropbox/core/v2/teamlog/MediaHubDownloadPolicy;
+}
+
+public class com/dropbox/core/v2/teamlog/MediaHubDownloadPolicyChangedDetails {
+	protected final field newValue Lcom/dropbox/core/v2/teamlog/MediaHubDownloadPolicy;
+	protected final field previousValue Lcom/dropbox/core/v2/teamlog/MediaHubDownloadPolicy;
+	public fun <init> (Lcom/dropbox/core/v2/teamlog/MediaHubDownloadPolicy;Lcom/dropbox/core/v2/teamlog/MediaHubDownloadPolicy;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getNewValue ()Lcom/dropbox/core/v2/teamlog/MediaHubDownloadPolicy;
+	public fun getPreviousValue ()Lcom/dropbox/core/v2/teamlog/MediaHubDownloadPolicy;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/MediaHubDownloadPolicyChangedType {
+	protected final field description Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getDescription ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/MediaHubFileDownloadedDetails {
+	public fun <init> ()V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/MediaHubFileDownloadedType {
+	protected final field description Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getDescription ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public final class com/dropbox/core/v2/teamlog/MediaHubLinkSharingPolicy : java/lang/Enum {
+	public static final field NO_ONE Lcom/dropbox/core/v2/teamlog/MediaHubLinkSharingPolicy;
+	public static final field OTHER Lcom/dropbox/core/v2/teamlog/MediaHubLinkSharingPolicy;
+	public static final field PUBLIC Lcom/dropbox/core/v2/teamlog/MediaHubLinkSharingPolicy;
+	public static final field TEAM_ONLY Lcom/dropbox/core/v2/teamlog/MediaHubLinkSharingPolicy;
+	public static fun valueOf (Ljava/lang/String;)Lcom/dropbox/core/v2/teamlog/MediaHubLinkSharingPolicy;
+	public static fun values ()[Lcom/dropbox/core/v2/teamlog/MediaHubLinkSharingPolicy;
+}
+
+public class com/dropbox/core/v2/teamlog/MediaHubLinkSharingPolicyChangedDetails {
+	protected final field newValue Lcom/dropbox/core/v2/teamlog/MediaHubLinkSharingPolicy;
+	protected final field previousValue Lcom/dropbox/core/v2/teamlog/MediaHubLinkSharingPolicy;
+	public fun <init> (Lcom/dropbox/core/v2/teamlog/MediaHubLinkSharingPolicy;Lcom/dropbox/core/v2/teamlog/MediaHubLinkSharingPolicy;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getNewValue ()Lcom/dropbox/core/v2/teamlog/MediaHubLinkSharingPolicy;
+	public fun getPreviousValue ()Lcom/dropbox/core/v2/teamlog/MediaHubLinkSharingPolicy;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/MediaHubLinkSharingPolicyChangedType {
+	protected final field description Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getDescription ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/MediaHubProjectLogInfo {
+	protected final field projectId Ljava/lang/String;
+	protected final field projectName Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getProjectId ()Ljava/lang/String;
+	public fun getProjectName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public final class com/dropbox/core/v2/teamlog/MediaHubProjectRole : java/lang/Enum {
+	public static final field EDITOR Lcom/dropbox/core/v2/teamlog/MediaHubProjectRole;
+	public static final field OTHER Lcom/dropbox/core/v2/teamlog/MediaHubProjectRole;
+	public static final field OWNER Lcom/dropbox/core/v2/teamlog/MediaHubProjectRole;
+	public static final field REVIEWER Lcom/dropbox/core/v2/teamlog/MediaHubProjectRole;
+	public static fun valueOf (Ljava/lang/String;)Lcom/dropbox/core/v2/teamlog/MediaHubProjectRole;
+	public static fun values ()[Lcom/dropbox/core/v2/teamlog/MediaHubProjectRole;
+}
+
+public class com/dropbox/core/v2/teamlog/MediaHubProjectTeamAddDetails {
+	protected final field project Lcom/dropbox/core/v2/teamlog/MediaHubProjectLogInfo;
+	public fun <init> ()V
+	public fun <init> (Lcom/dropbox/core/v2/teamlog/MediaHubProjectLogInfo;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getProject ()Lcom/dropbox/core/v2/teamlog/MediaHubProjectLogInfo;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/MediaHubProjectTeamAddType {
+	protected final field description Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getDescription ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/MediaHubProjectTeamDeleteDetails {
+	protected final field project Lcom/dropbox/core/v2/teamlog/MediaHubProjectLogInfo;
+	public fun <init> ()V
+	public fun <init> (Lcom/dropbox/core/v2/teamlog/MediaHubProjectLogInfo;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getProject ()Lcom/dropbox/core/v2/teamlog/MediaHubProjectLogInfo;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/MediaHubProjectTeamDeleteType {
+	protected final field description Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getDescription ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/MediaHubProjectTeamRoleChangedDetails {
+	protected final field newRole Lcom/dropbox/core/v2/teamlog/MediaHubProjectRole;
+	protected final field previousRole Lcom/dropbox/core/v2/teamlog/MediaHubProjectRole;
+	protected final field project Lcom/dropbox/core/v2/teamlog/MediaHubProjectLogInfo;
+	public fun <init> (Lcom/dropbox/core/v2/teamlog/MediaHubProjectRole;Lcom/dropbox/core/v2/teamlog/MediaHubProjectRole;)V
+	public fun <init> (Lcom/dropbox/core/v2/teamlog/MediaHubProjectRole;Lcom/dropbox/core/v2/teamlog/MediaHubProjectRole;Lcom/dropbox/core/v2/teamlog/MediaHubProjectLogInfo;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getNewRole ()Lcom/dropbox/core/v2/teamlog/MediaHubProjectRole;
+	public fun getPreviousRole ()Lcom/dropbox/core/v2/teamlog/MediaHubProjectRole;
+	public fun getProject ()Lcom/dropbox/core/v2/teamlog/MediaHubProjectLogInfo;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/MediaHubProjectTeamRoleChangedType {
+	protected final field description Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getDescription ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public final class com/dropbox/core/v2/teamlog/MediaHubSharedLinkAudience : java/lang/Enum {
+	public static final field NO_ONE Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkAudience;
+	public static final field OTHER Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkAudience;
+	public static final field PUBLIC Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkAudience;
+	public static final field TEAM_ONLY Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkAudience;
+	public static fun valueOf (Ljava/lang/String;)Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkAudience;
+	public static fun values ()[Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkAudience;
+}
+
+public class com/dropbox/core/v2/teamlog/MediaHubSharedLinkAudienceChangedDetails {
+	protected final field newValue Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkAudience;
+	protected final field previousValue Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkAudience;
+	protected final field project Lcom/dropbox/core/v2/teamlog/MediaHubProjectLogInfo;
+	protected final field targetType Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkTargetType;
+	public fun <init> (Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkTargetType;Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkAudience;Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkAudience;)V
+	public fun <init> (Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkTargetType;Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkAudience;Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkAudience;Lcom/dropbox/core/v2/teamlog/MediaHubProjectLogInfo;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getNewValue ()Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkAudience;
+	public fun getPreviousValue ()Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkAudience;
+	public fun getProject ()Lcom/dropbox/core/v2/teamlog/MediaHubProjectLogInfo;
+	public fun getTargetType ()Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkTargetType;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/MediaHubSharedLinkAudienceChangedType {
+	protected final field description Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getDescription ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/MediaHubSharedLinkCreatedDetails {
+	protected final field audience Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkAudience;
+	protected final field project Lcom/dropbox/core/v2/teamlog/MediaHubProjectLogInfo;
+	protected final field targetType Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkTargetType;
+	public fun <init> (Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkTargetType;Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkAudience;)V
+	public fun <init> (Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkTargetType;Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkAudience;Lcom/dropbox/core/v2/teamlog/MediaHubProjectLogInfo;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getAudience ()Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkAudience;
+	public fun getProject ()Lcom/dropbox/core/v2/teamlog/MediaHubProjectLogInfo;
+	public fun getTargetType ()Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkTargetType;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/MediaHubSharedLinkCreatedType {
+	protected final field description Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getDescription ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public final class com/dropbox/core/v2/teamlog/MediaHubSharedLinkDownloadSetting : java/lang/Enum {
+	public static final field DISABLED Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkDownloadSetting;
+	public static final field ENABLED Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkDownloadSetting;
+	public static final field OTHER Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkDownloadSetting;
+	public static fun valueOf (Ljava/lang/String;)Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkDownloadSetting;
+	public static fun values ()[Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkDownloadSetting;
+}
+
+public class com/dropbox/core/v2/teamlog/MediaHubSharedLinkDownloadSettingChangedDetails {
+	protected final field newValue Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkDownloadSetting;
+	protected final field previousValue Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkDownloadSetting;
+	protected final field project Lcom/dropbox/core/v2/teamlog/MediaHubProjectLogInfo;
+	protected final field targetType Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkTargetType;
+	public fun <init> (Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkTargetType;Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkDownloadSetting;Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkDownloadSetting;)V
+	public fun <init> (Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkTargetType;Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkDownloadSetting;Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkDownloadSetting;Lcom/dropbox/core/v2/teamlog/MediaHubProjectLogInfo;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getNewValue ()Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkDownloadSetting;
+	public fun getPreviousValue ()Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkDownloadSetting;
+	public fun getProject ()Lcom/dropbox/core/v2/teamlog/MediaHubProjectLogInfo;
+	public fun getTargetType ()Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkTargetType;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/MediaHubSharedLinkDownloadSettingChangedType {
+	protected final field description Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getDescription ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/MediaHubSharedLinkRevokedDetails {
+	protected final field project Lcom/dropbox/core/v2/teamlog/MediaHubProjectLogInfo;
+	protected final field targetType Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkTargetType;
+	public fun <init> (Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkTargetType;)V
+	public fun <init> (Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkTargetType;Lcom/dropbox/core/v2/teamlog/MediaHubProjectLogInfo;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getProject ()Lcom/dropbox/core/v2/teamlog/MediaHubProjectLogInfo;
+	public fun getTargetType ()Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkTargetType;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/MediaHubSharedLinkRevokedType {
+	protected final field description Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getDescription ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public final class com/dropbox/core/v2/teamlog/MediaHubSharedLinkTargetType : java/lang/Enum {
+	public static final field BUNDLE Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkTargetType;
+	public static final field OTHER Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkTargetType;
+	public static final field PROJECT Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkTargetType;
+	public static fun valueOf (Ljava/lang/String;)Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkTargetType;
+	public static fun values ()[Lcom/dropbox/core/v2/teamlog/MediaHubSharedLinkTargetType;
+}
+
 public class com/dropbox/core/v2/teamlog/MemberAccessDetailsCreateReportDetails {
 	public fun <init> ()V
 	public fun equals (Ljava/lang/Object;)Z
@@ -28709,6 +29751,24 @@ public class com/dropbox/core/v2/teamlog/MemberDeleteProfilePhotoDetails {
 }
 
 public class com/dropbox/core/v2/teamlog/MemberDeleteProfilePhotoType {
+	protected final field description Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getDescription ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/MemberFolderContentsAccessedDetails {
+	public fun <init> ()V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/MemberFolderContentsAccessedType {
 	protected final field description Ljava/lang/String;
 	public fun <init> (Ljava/lang/String;)V
 	public fun equals (Ljava/lang/Object;)Z
@@ -29227,6 +30287,38 @@ public class com/dropbox/core/v2/teamlog/MobileSessionLogInfo : com/dropbox/core
 	public fun <init> (Ljava/lang/String;)V
 	public fun equals (Ljava/lang/Object;)Z
 	public fun getSessionId ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public final class com/dropbox/core/v2/teamlog/MultiTeamIdentityPolicy : java/lang/Enum {
+	public static final field DEFAULT Lcom/dropbox/core/v2/teamlog/MultiTeamIdentityPolicy;
+	public static final field DISABLED Lcom/dropbox/core/v2/teamlog/MultiTeamIdentityPolicy;
+	public static final field ENABLED Lcom/dropbox/core/v2/teamlog/MultiTeamIdentityPolicy;
+	public static final field OTHER Lcom/dropbox/core/v2/teamlog/MultiTeamIdentityPolicy;
+	public static fun valueOf (Ljava/lang/String;)Lcom/dropbox/core/v2/teamlog/MultiTeamIdentityPolicy;
+	public static fun values ()[Lcom/dropbox/core/v2/teamlog/MultiTeamIdentityPolicy;
+}
+
+public class com/dropbox/core/v2/teamlog/MultiTeamIdentityPolicyChangedDetails {
+	protected final field newValue Lcom/dropbox/core/v2/teamlog/MultiTeamIdentityPolicy;
+	protected final field previousValue Lcom/dropbox/core/v2/teamlog/MultiTeamIdentityPolicy;
+	public fun <init> (Lcom/dropbox/core/v2/teamlog/MultiTeamIdentityPolicy;)V
+	public fun <init> (Lcom/dropbox/core/v2/teamlog/MultiTeamIdentityPolicy;Lcom/dropbox/core/v2/teamlog/MultiTeamIdentityPolicy;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getNewValue ()Lcom/dropbox/core/v2/teamlog/MultiTeamIdentityPolicy;
+	public fun getPreviousValue ()Lcom/dropbox/core/v2/teamlog/MultiTeamIdentityPolicy;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/MultiTeamIdentityPolicyChangedType {
+	protected final field description Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getDescription ()Ljava/lang/String;
 	public fun hashCode ()I
 	public fun toString ()Ljava/lang/String;
 	public fun toStringMultiline ()Ljava/lang/String;
@@ -31239,6 +32331,146 @@ public class com/dropbox/core/v2/teamlog/ProductRemovedFromMemberDetails {
 }
 
 public class com/dropbox/core/v2/teamlog/ProductRemovedFromMemberType {
+	protected final field description Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getDescription ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/ProtectActionAddCollaboratorDetails {
+	protected final field actionId Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getActionId ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/ProtectActionAddCollaboratorType {
+	protected final field description Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getDescription ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/ProtectActionAddLinkDetails {
+	protected final field actionId Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getActionId ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/ProtectActionAddLinkType {
+	protected final field description Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getDescription ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/ProtectActionDeleteDetails {
+	protected final field actionId Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getActionId ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/ProtectActionDeleteType {
+	protected final field description Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getDescription ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/ProtectActionExportDetails {
+	protected final field actionId Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getActionId ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/ProtectActionExportType {
+	protected final field description Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getDescription ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/ProtectActionRemoveCollaboratorDetails {
+	protected final field actionId Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getActionId ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/ProtectActionRemoveCollaboratorType {
+	protected final field description Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getDescription ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/ProtectActionRemoveLinkDetails {
+	protected final field actionId Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getActionId ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/ProtectActionRemoveLinkType {
+	protected final field description Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getDescription ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/ProtectActionStopSharingDetails {
+	protected final field actionId Ljava/lang/String;
+	public fun <init> (Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getActionId ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public fun toStringMultiline ()Ljava/lang/String;
+}
+
+public class com/dropbox/core/v2/teamlog/ProtectActionStopSharingType {
 	protected final field description Ljava/lang/String;
 	public fun <init> (Ljava/lang/String;)V
 	public fun equals (Ljava/lang/Object;)Z

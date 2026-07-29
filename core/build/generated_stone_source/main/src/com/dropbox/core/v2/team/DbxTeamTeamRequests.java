@@ -10,6 +10,7 @@ import com.dropbox.core.http.HttpRequestor;
 import com.dropbox.core.v2.DbxRawClientV2;
 import com.dropbox.core.v2.account.PhotoSourceArg;
 import com.dropbox.core.v2.async.LaunchEmptyResult;
+import com.dropbox.core.v2.async.LaunchResultBase;
 import com.dropbox.core.v2.async.PollArg;
 import com.dropbox.core.v2.async.PollEmptyResult;
 import com.dropbox.core.v2.async.PollError;
@@ -2217,6 +2218,106 @@ public class DbxTeamTeamRequests {
     public MembersAddJobStatusV2Result membersAddJobStatusGetV2(String asyncJobId) throws PollErrorException, DbxException {
         PollArg _arg = new PollArg(asyncJobId);
         return membersAddJobStatusGetV2(_arg);
+    }
+
+    //
+    // route 2/team/members/bulk_suspend
+    //
+
+    /**
+     * Launch a bulk suspend job. The server enforces a maximum of 500 members.
+     *
+     * @param arg  Launches one action-specific bulk suspend job.
+     *
+     * @return Result returned by methods that launch an asynchronous job. A
+     *     method who may either launch an asynchronous job, or complete the
+     *     request synchronously, can use this union by extending it, and adding
+     *     a 'complete' field with the type of the synchronous response. See
+     *     {@link LaunchEmptyResult} for an example.
+     */
+    LaunchResultBase membersBulkSuspend(BulkSuspendArg arg) throws BulkSuspendErrorException, DbxException {
+        try {
+            return this.client.rpcStyle(this.client.getHost().getApi(),
+                                        "2/team/members/bulk_suspend",
+                                        arg,
+                                        false,
+                                        BulkSuspendArg.Serializer.INSTANCE,
+                                        LaunchResultBase.Serializer.INSTANCE,
+                                        BulkSuspendError.Serializer.INSTANCE);
+        }
+        catch (DbxWrappedException ex) {
+            throw new BulkSuspendErrorException("2/team/members/bulk_suspend", ex.getRequestId(), ex.getUserMessage(), (BulkSuspendError) ex.getErrorValue());
+        }
+    }
+
+    /**
+     * Launch a bulk suspend job. The server enforces a maximum of 500 members.
+     *
+     * @param members  Must contain between 1 and 500 targets. The launch
+     *     handler also rejects duplicate client item IDs and duplicate member
+     *     selectors. Must not contain a {@code null} item and not be {@code
+     *     null}.
+     *
+     * @return Result returned by methods that launch an asynchronous job. A
+     *     method who may either launch an asynchronous job, or complete the
+     *     request synchronously, can use this union by extending it, and adding
+     *     a 'complete' field with the type of the synchronous response. See
+     *     {@link LaunchEmptyResult} for an example.
+     *
+     * @throws IllegalArgumentException  If any argument does not meet its
+     *     preconditions.
+     */
+    public LaunchResultBase membersBulkSuspend(List<BulkSuspendMemberTarget> members) throws BulkSuspendErrorException, DbxException {
+        BulkSuspendArg _arg = new BulkSuspendArg(members);
+        return membersBulkSuspend(_arg);
+    }
+
+    //
+    // route 2/team/members/bulk_suspend/job_status/check
+    //
+
+    /**
+     * Poll a previously launched bulk suspend job.
+     *
+     * @param arg  Arguments for methods that poll the status of an asynchronous
+     *     job.
+     *
+     * @return Coarse job state. Live row progress and report contents are
+     *     intentionally omitted; callers receive row details in the terminal
+     *     email report.
+     */
+    BulkSuspendJobStatus membersBulkSuspendJobStatusCheck(PollArg arg) throws PollErrorException, DbxException {
+        try {
+            return this.client.rpcStyle(this.client.getHost().getApi(),
+                                        "2/team/members/bulk_suspend/job_status/check",
+                                        arg,
+                                        false,
+                                        PollArg.Serializer.INSTANCE,
+                                        BulkSuspendJobStatus.Serializer.INSTANCE,
+                                        PollError.Serializer.INSTANCE);
+        }
+        catch (DbxWrappedException ex) {
+            throw new PollErrorException("2/team/members/bulk_suspend/job_status/check", ex.getRequestId(), ex.getUserMessage(), (PollError) ex.getErrorValue());
+        }
+    }
+
+    /**
+     * Poll a previously launched bulk suspend job.
+     *
+     * @param asyncJobId  Id of the asynchronous job. This is the value of a
+     *     response returned from the method that launched the job. Must have
+     *     length of at least 1 and not be {@code null}.
+     *
+     * @return Coarse job state. Live row progress and report contents are
+     *     intentionally omitted; callers receive row details in the terminal
+     *     email report.
+     *
+     * @throws IllegalArgumentException  If any argument does not meet its
+     *     preconditions.
+     */
+    public BulkSuspendJobStatus membersBulkSuspendJobStatusCheck(String asyncJobId) throws PollErrorException, DbxException {
+        PollArg _arg = new PollArg(asyncJobId);
+        return membersBulkSuspendJobStatusCheck(_arg);
     }
 
     //
